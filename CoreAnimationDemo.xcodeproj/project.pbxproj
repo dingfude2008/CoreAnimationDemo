@@ -18,6 +18,7 @@
 		ADB00E291E49B4B40069F604 /* Digits.png in Resources */ = {isa = PBXBuildFile; fileRef = ADB00E281E49B4B40069F604 /* Digits.png */; };
 		ADB04C611E4D8CC5002C9791 /* NSDate+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB04C601E4D8CC5002C9791 /* NSDate+Addition.m */; };
 		ADB04C641E4DFEDE002C9791 /* LayerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB04C631E4DFEDE002C9791 /* LayerLabel.m */; };
+		ADB04C671E4E04E0002C9791 /* CATranformLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB04C661E4E04E0002C9791 /* CATranformLayerController.m */; };
 		ADB524C71E485C710083249D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB524C61E485C710083249D /* main.m */; };
 		ADB524CA1E485C710083249D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB524C91E485C710083249D /* AppDelegate.m */; };
 		ADB524CD1E485C710083249D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB524CC1E485C710083249D /* ViewController.m */; };
@@ -48,6 +49,8 @@
 		ADB04C601E4D8CC5002C9791 /* NSDate+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Addition.m"; path = "../../../../Desktop/为乐科技/VitaFun项目/FriedRice/FriedRice/FriedRice/Class/Tools(工具)/CZAdditions/NSDate+Addition.m"; sourceTree = "<group>"; };
 		ADB04C621E4DFEDE002C9791 /* LayerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerLabel.h; sourceTree = "<group>"; };
 		ADB04C631E4DFEDE002C9791 /* LayerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerLabel.m; sourceTree = "<group>"; };
+		ADB04C651E4E04E0002C9791 /* CATransformLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransformLayerController.h; sourceTree = "<group>"; };
+		ADB04C661E4E04E0002C9791 /* CATranformLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATranformLayerController.m; sourceTree = "<group>"; };
 		ADB524C21E485C710083249D /* CoreAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADB524C61E485C710083249D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ADB524C81E485C710083249D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -125,6 +128,8 @@
 				ADAA76D81E4C616D00A9BF6A /* SevenController.m */,
 				ADB04C621E4DFEDE002C9791 /* LayerLabel.h */,
 				ADB04C631E4DFEDE002C9791 /* LayerLabel.m */,
+				ADB04C651E4E04E0002C9791 /* CATransformLayerController.h */,
+				ADB04C661E4E04E0002C9791 /* CATranformLayerController.m */,
 			);
 			path = CoreAnimationDemo;
 			sourceTree = "<group>";
@@ -231,6 +236,7 @@
 				ADB524CA1E485C710083249D /* AppDelegate.m in Sources */,
 				ADB00E241E4961550069F604 /* ThirdController.m in Sources */,
 				ADB524C71E485C710083249D /* main.m in Sources */,
+				ADB04C671E4E04E0002C9791 /* CATranformLayerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
