@@ -30,10 +30,86 @@
     //apply the transform and return
     face.transform = transform;
     return face;
+    
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    /*
+     
+     CAReplicatorLayer 是为了高效生成许多相似的图层。它会绘制一个或多个图层的子图层，并在复制体上应用不同的变换
+     
+     
+     */
+    //create a replicator layer and add it to our view
+    CAReplicatorLayer *replicator = [CAReplicatorLayer layer];
+    replicator.frame = self.containerView.bounds;
+    [self.containerView.layer addSublayer:replicator];
+    
+    //configure the replicator
+    replicator.instanceCount = 10;
+    
+    //apply a transform for each instance
+    CATransform3D transform = CATransform3DIdentity;
+    transform = CATransform3DTranslate(transform, 0, 200, 0);
+    transform = CATransform3DRotate(transform, M_PI / 5.0, 0, 0, 1);
+    transform = CATransform3DTranslate(transform, 0, -200, 0);
+    replicator.instanceTransform = transform;
+    
+    //apply a color shift for each instance
+    replicator.instanceBlueOffset = -0.1;
+    replicator.instanceGreenOffset = -0.1;
+    
+    //create a sublayer and place it inside the replicator
+    CALayer *layer = [CALayer layer];
+    layer.frame = CGRectMake(100.0f, 100.0f, 100.0f, 100.0f);
+    layer.backgroundColor = [UIColor whiteColor].CGColor;
+    [replicator addSublayer:layer];
+}
+
+- (void)gradientLayerA{
+    
+    
+    /*
+     CAGradientLayer 是用来生成两种或更多颜色的平缓渐变的，使用了硬件加速
+     
+     startPoint
+     endPoint
+     
+     
+     */
+    
+    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+    gradientLayer.frame = self.containerView.bounds;
+    [self.containerView.layer addSublayer:gradientLayer];
+    
+    gradientLayer.colors = @[
+                             (__bridge id)[UIColor redColor].CGColor,
+                             (__bridge id)[UIColor blackColor].CGColor,
+                             (__bridge id)[UIColor yellowColor].CGColor,
+                             (__bridge id)[UIColor blueColor].CGColor
+                             ];
+    
+    // 使用单位坐标
+    
+    gradientLayer.startPoint = CGPointMake(0, 0);
+    //    gradientLayer.endPoint = CGPointMake(1, 1);
+    gradientLayer.endPoint = CGPointMake(1, 0);
+    
+    // 多重渐变
+    // 默认的是均衡分布
+    
+    // 位置数组必须和 colors 数量一致，不然会出现空白
+    gradientLayer.locations = @[@0.0, @0.25, @0.5];
+    
+    
+}
+
+
+- (void)transformLayer{
+    
     
     /*
      Core Animation 在 2D 画面中，是允许独立的移动一个区域的，以肘为支点，可以移动前臂和手，而不是移动肩膀，但是在 3D 情况下就不太可能了，因为所有的子图层都把它的子图层平面化到一个场景中了
