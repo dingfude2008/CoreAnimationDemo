@@ -10,6 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import <GLKit/GLKit.h>
 #import <CoreText/CoreText.h>
+#import "LayerLabel.h"
 
 @interface SevenController ()
 @property (weak, nonatomic) IBOutlet UIView *containerView;
@@ -26,6 +27,23 @@
     [self setCATextLayerAttributedView];
     
     
+    [self addLayerLabel];
+    
+}
+
+
+- (void)addLayerLabel{
+
+    
+    LayerLabel *layerLabel = [[LayerLabel alloc] initWithFrame:CGRectMake(0, 150, 280, 30)];
+    [self.view addSubview:layerLabel];
+    layerLabel.textColor = [UIColor purpleColor];
+    layerLabel.font = [UIFont boldSystemFontOfSize:23];
+    layerLabel.text = @"LayerLabel *layerLabel = [[LayerLabel alloc] initWithFrame:CGRectMa";
+    layerLabel.layer.borderWidth = 1;
+    layerLabel.layer.borderColor = [UIColor redColor].CGColor;
+    
+
 }
 
 - (void)setCATextLayerAttributedView{

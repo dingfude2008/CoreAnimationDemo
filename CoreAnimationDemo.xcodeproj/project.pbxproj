@@ -17,6 +17,7 @@
 		ADB00E271E4975300069F604 /* FourController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB00E261E4975300069F604 /* FourController.m */; };
 		ADB00E291E49B4B40069F604 /* Digits.png in Resources */ = {isa = PBXBuildFile; fileRef = ADB00E281E49B4B40069F604 /* Digits.png */; };
 		ADB04C611E4D8CC5002C9791 /* NSDate+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB04C601E4D8CC5002C9791 /* NSDate+Addition.m */; };
+		ADB04C641E4DFEDE002C9791 /* LayerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB04C631E4DFEDE002C9791 /* LayerLabel.m */; };
 		ADB524C71E485C710083249D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB524C61E485C710083249D /* main.m */; };
 		ADB524CA1E485C710083249D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB524C91E485C710083249D /* AppDelegate.m */; };
 		ADB524CD1E485C710083249D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB524CC1E485C710083249D /* ViewController.m */; };
@@ -45,6 +46,8 @@
 		ADB00E281E49B4B40069F604 /* Digits.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Digits.png; sourceTree = "<group>"; };
 		ADB04C5F1E4D8CC5002C9791 /* NSDate+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+Addition.h"; path = "../../../../Desktop/为乐科技/VitaFun项目/FriedRice/FriedRice/FriedRice/Class/Tools(工具)/CZAdditions/NSDate+Addition.h"; sourceTree = "<group>"; };
 		ADB04C601E4D8CC5002C9791 /* NSDate+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Addition.m"; path = "../../../../Desktop/为乐科技/VitaFun项目/FriedRice/FriedRice/FriedRice/Class/Tools(工具)/CZAdditions/NSDate+Addition.m"; sourceTree = "<group>"; };
+		ADB04C621E4DFEDE002C9791 /* LayerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerLabel.h; sourceTree = "<group>"; };
+		ADB04C631E4DFEDE002C9791 /* LayerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerLabel.m; sourceTree = "<group>"; };
 		ADB524C21E485C710083249D /* CoreAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADB524C61E485C710083249D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ADB524C81E485C710083249D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -120,6 +123,8 @@
 				ADA82A311E4B184400E5F585 /* SixController.xib */,
 				ADAA76D71E4C616D00A9BF6A /* SevenController.h */,
 				ADAA76D81E4C616D00A9BF6A /* SevenController.m */,
+				ADB04C621E4DFEDE002C9791 /* LayerLabel.h */,
+				ADB04C631E4DFEDE002C9791 /* LayerLabel.m */,
 			);
 			path = CoreAnimationDemo;
 			sourceTree = "<group>";
@@ -214,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADB04C641E4DFEDE002C9791 /* LayerLabel.m in Sources */,
 				ADB524CD1E485C710083249D /* ViewController.m in Sources */,
 				ADB00E271E4975300069F604 /* FourController.m in Sources */,
 				ADA82A301E4B17AB00E5F585 /* SixController.m in Sources */,
