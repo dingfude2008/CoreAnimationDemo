@@ -331,6 +331,37 @@
             </objects>
             <point key="canvasLocation" x="-926" y="141"/>
         </scene>
+        <!--Eigth Controller-->
+        <scene sceneID="Deg-Op-gyJ">
+            <objects>
+                <viewController id="fnF-oc-JYo" customClass="EigthController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2hi-CB-KN7"/>
+                        <viewControllerLayoutGuide type="bottom" id="x5i-la-bSm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZCw-dA-kOT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xUu-Ae-dYe" customClass="ScrollView">
+                                <rect key="frame" x="9" y="72" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clockBackground" translatesAutoresizingMaskIntoConstraints="NO" id="djz-dR-P5q">
+                                        <rect key="frame" x="-36" y="-39" width="388" height="330"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="obp-6p-Pp3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1565.5999999999999" y="122.78860569715144"/>
+        </scene>
         <!--Transform Layer Controller-->
         <scene sceneID="IBW-mn-8yh">
             <objects>
@@ -370,7 +401,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KAe-p6-m8x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1631" y="-11"/>
+            <point key="canvasLocation" x="2316" y="-183"/>
         </scene>
         <!--Seven Controller-->
         <scene sceneID="Py2-FZ-8mc">
@@ -400,6 +431,14 @@
                                 <state key="normal" title="CATranformLayer"/>
                                 <connections>
                                     <segue destination="TcO-bz-fjD" kind="show" id="fsL-HI-jfb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8I-x4-3cM">
+                                <rect key="frame" x="0.0" y="368" width="134" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="CAScrolllLayer"/>
+                                <connections>
+                                    <segue destination="fnF-oc-JYo" kind="show" id="XBz-2s-26w"/>
                                 </connections>
                             </button>
                         </subviews>
