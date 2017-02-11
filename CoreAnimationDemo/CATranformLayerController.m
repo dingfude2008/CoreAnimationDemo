@@ -37,6 +37,11 @@
     [super viewDidLoad];
     
     
+    
+    // [self replicatorLayerA];
+}
+
+- (void)replicatorLayerA{
     /*
      
      CAReplicatorLayer 是为了高效生成许多相似的图层。它会绘制一个或多个图层的子图层，并在复制体上应用不同的变换

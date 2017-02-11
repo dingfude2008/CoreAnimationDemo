@@ -12,6 +12,7 @@
 		ADA82A321E4B184400E5F585 /* SixController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADA82A311E4B184400E5F585 /* SixController.xib */; };
 		ADA82A351E4B1A0900E5F585 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA82A341E4B1A0900E5F585 /* TabBarController.m */; };
 		ADA82A371E4B5BFD00E5F585 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA82A361E4B5BFD00E5F585 /* GLKit.framework */; };
+		ADA9F28C1E4ECFEC00885AA5 /* ReflectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA9F28B1E4ECFEC00885AA5 /* ReflectionView.m */; };
 		ADAA76D91E4C616D00A9BF6A /* SevenController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA76D81E4C616D00A9BF6A /* SevenController.m */; };
 		ADB00E241E4961550069F604 /* ThirdController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB00E231E4961550069F604 /* ThirdController.m */; };
 		ADB00E271E4975300069F604 /* FourController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB00E261E4975300069F604 /* FourController.m */; };
@@ -38,6 +39,8 @@
 		ADA82A331E4B1A0900E5F585 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		ADA82A341E4B1A0900E5F585 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		ADA82A361E4B5BFD00E5F585 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		ADA9F28A1E4ECFEC00885AA5 /* ReflectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReflectionView.h; sourceTree = "<group>"; };
+		ADA9F28B1E4ECFEC00885AA5 /* ReflectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReflectionView.m; sourceTree = "<group>"; };
 		ADAA76D71E4C616D00A9BF6A /* SevenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SevenController.h; sourceTree = "<group>"; };
 		ADAA76D81E4C616D00A9BF6A /* SevenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SevenController.m; sourceTree = "<group>"; };
 		ADB00E221E4961550069F604 /* ThirdController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdController.h; sourceTree = "<group>"; };
@@ -130,6 +133,8 @@
 				ADB04C631E4DFEDE002C9791 /* LayerLabel.m */,
 				ADB04C651E4E04E0002C9791 /* CATransformLayerController.h */,
 				ADB04C661E4E04E0002C9791 /* CATranformLayerController.m */,
+				ADA9F28A1E4ECFEC00885AA5 /* ReflectionView.h */,
+				ADA9F28B1E4ECFEC00885AA5 /* ReflectionView.m */,
 			);
 			path = CoreAnimationDemo;
 			sourceTree = "<group>";
@@ -233,6 +238,7 @@
 				ADB04C611E4D8CC5002C9791 /* NSDate+Addition.m in Sources */,
 				ADAA76D91E4C616D00A9BF6A /* SevenController.m in Sources */,
 				ADB524E51E48B6B30083249D /* SecondController.m in Sources */,
+				ADA9F28C1E4ECFEC00885AA5 /* ReflectionView.m in Sources */,
 				ADB524CA1E485C710083249D /* AppDelegate.m in Sources */,
 				ADB00E241E4961550069F604 /* ThirdController.m in Sources */,
 				ADB524C71E485C710083249D /* main.m in Sources */,
