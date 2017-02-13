@@ -343,11 +343,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HDF-t4-BGb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </scrollView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xUu-Ae-dYe" customClass="ScrollView">
                                 <rect key="frame" x="9" y="72" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clockBackground" translatesAutoresizingMaskIntoConstraints="NO" id="djz-dR-P5q">
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clockBackground" translatesAutoresizingMaskIntoConstraints="NO" id="djz-dR-P5q">
                                         <rect key="frame" x="-36" y="-39" width="388" height="330"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -356,11 +359,20 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="HDF-t4-BGb" secondAttribute="bottom" id="OMt-c3-cuT"/>
+                            <constraint firstItem="HDF-t4-BGb" firstAttribute="leading" secondItem="ZCw-dA-kOT" secondAttribute="leading" id="t29-lc-fWm"/>
+                            <constraint firstItem="HDF-t4-BGb" firstAttribute="top" secondItem="ZCw-dA-kOT" secondAttribute="top" id="v7j-on-sOA"/>
+                            <constraint firstAttribute="trailing" secondItem="HDF-t4-BGb" secondAttribute="trailing" id="vK1-0Q-Noy"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="HDF-t4-BGb" id="0cc-zJ-7Fr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="obp-6p-Pp3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1565.5999999999999" y="122.78860569715144"/>
+            <point key="canvasLocation" x="1666" y="184"/>
         </scene>
         <!--Transform Layer Controller-->
         <scene sceneID="IBW-mn-8yh">
@@ -401,7 +413,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KAe-p6-m8x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2316" y="-183"/>
+            <point key="canvasLocation" x="1970" y="-635"/>
         </scene>
         <!--Seven Controller-->
         <scene sceneID="Py2-FZ-8mc">

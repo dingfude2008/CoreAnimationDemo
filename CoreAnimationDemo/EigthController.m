@@ -8,7 +8,9 @@
 
 #import "EigthController.h"
 
-@interface EigthController ()
+@interface EigthController ()<CALayerDelegate>
+
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
 
@@ -34,11 +36,56 @@
      */
     
     
+    
+    CATiledLayer *tileLayer = [CATiledLayer layer];
+    tileLayer.frame = CGRectMake(0, 0, 2048, 2048);
+    tileLayer.delegate = self;
+    
+    
+    [self.scrollView.layer addSublayer:tileLayer];
+    
+    self.scrollView.contentSize = tileLayer.frame.size;
+    
+    
+    [tileLayer setNeedsDisplay];
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+
+
+#pragma mark - CALayerDelegate  // 这里直接修改参数
+- (void)drawLayer:(CATiledLayer *)layer inContext:(CGContextRef)ctx{
+
+    CGRect bounds = CGContextGetClipBoundingBox(ctx);
+
+//    NSLog(@"1");
+    
+//    NSLog(@"")
+//
+    
+    NSInteger x = floor(bounds.origin.x / layer.tileSize.width);
+    NSInteger y = floor(bounds.origin.y / layer.tileSize.height);
+    
+    NSLog(@"1");
+    
+    //load tile image
+    NSString *imageName = [NSString stringWithFormat: @"Snowman_%02d_%02d", (int)x, (int)y];
+    NSString *imagePath = [[NSBundle mainBundle] pathForResource:imageName ofType:@"jpg"];
+    UIImage *tileImage = [UIImage imageWithContentsOfFile:imagePath];
+    
+    //draw tile
+    UIGraphicsPushContext(ctx);
+    [tileImage drawInRect:bounds];
+    UIGraphicsPopContext();
+    
 }
 
 /*

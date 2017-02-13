@@ -59,6 +59,17 @@ int main(int argc, const char * argv[]) {
         NSInteger rows = ceil(size.height / tileSize);
         NSInteger cols = ceil(size.width /  tileSize);
         
+        NSFileManager *fileManager = [NSFileManager defaultManager];
+        NSString *outPathFile = [outputPath stringByAppendingFormat: @"/"];
+        
+        BOOL isExist = [fileManager fileExistsAtPath:outPathFile];
+        if (!isExist) {
+            BOOL isCreated =  [fileManager createDirectoryAtPath:outPathFile withIntermediateDirectories:NO attributes:nil error:NULL];
+            if (isCreated) {
+                NSLog(@"创建成功");
+            }
+        }
+        
         for (int y = 0; y < rows; ++y) {
             for (int x = 0; x < cols; ++x) {
                 //extract tile image
@@ -67,12 +78,19 @@ int main(int argc, const char * argv[]) {
                 
                 //convert to jpeg data
                 NSBitmapImageRep *imageRep = [[NSBitmapImageRep alloc] initWithCGImage:tileImage];
-                NSData *data = [imageRep representationUsingType: NSJPEGFileType properties:nil];
+                NSData *data = [imageRep representationUsingType: NSJPEGFileType properties:@{}];
                 CGImageRelease(tileImage);
                 
                 //save file
-                NSString *path = [outputPath stringByAppendingFormat: @"_%02i_%02i.jpg", x, y];
-                [data writeToFile:path atomically:NO];
+                NSString *path = [outPathFile stringByAppendingFormat: @"Snowman_%02i_%02i.jpg", x, y];
+                
+                
+                BOOL result = [data writeToFile:path atomically:YES];
+                if (result) {
+                    NSLog(@"保存成功一张");
+                }else{
+                    NSLog(@"保存失败");
+                }
             }
         }
         
