@@ -7,6 +7,77 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD05DC031E52037F00B501C2 /* Snowman_00_00.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBBD1E52037F00B501C2 /* Snowman_00_00.jpg */; };
+		AD05DC041E52037F00B501C2 /* Snowman_00_06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBBE1E52037F00B501C2 /* Snowman_00_06.jpg */; };
+		AD05DC051E52037F00B501C2 /* Snowman_01_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBBF1E52037F00B501C2 /* Snowman_01_01.jpg */; };
+		AD05DC061E52037F00B501C2 /* Snowman_01_06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBC01E52037F00B501C2 /* Snowman_01_06.jpg */; };
+		AD05DC071E52037F00B501C2 /* Snowman_04_05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBC11E52037F00B501C2 /* Snowman_04_05.jpg */; };
+		AD05DC081E52037F00B501C2 /* Snowman_04_06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBC21E52037F00B501C2 /* Snowman_04_06.jpg */; };
+		AD05DC091E52037F00B501C2 /* Snowman_02_06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBC31E52037F00B501C2 /* Snowman_02_06.jpg */; };
+		AD05DC0A1E52037F00B501C2 /* Snowman_03_06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBC41E52037F00B501C2 /* Snowman_03_06.jpg */; };
+		AD05DC0B1E52037F00B501C2 /* Snowman_06_06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBC51E52037F00B501C2 /* Snowman_06_06.jpg */; };
+		AD05DC0C1E52037F00B501C2 /* Snowman_07_03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBC61E52037F00B501C2 /* Snowman_07_03.jpg */; };
+		AD05DC0D1E52037F00B501C2 /* Snowman_01_00.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBC71E52037F00B501C2 /* Snowman_01_00.jpg */; };
+		AD05DC0E1E52037F00B501C2 /* Snowman_01_03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBC81E52037F00B501C2 /* Snowman_01_03.jpg */; };
+		AD05DC0F1E52037F00B501C2 /* Snowman_01_05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBC91E52037F00B501C2 /* Snowman_01_05.jpg */; };
+		AD05DC101E52037F00B501C2 /* Snowman_07_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBCA1E52037F00B501C2 /* Snowman_07_01.jpg */; };
+		AD05DC111E52037F00B501C2 /* Snowman_06_03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBCB1E52037F00B501C2 /* Snowman_06_03.jpg */; };
+		AD05DC121E52037F00B501C2 /* Snowman_03_04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBCC1E52037F00B501C2 /* Snowman_03_04.jpg */; };
+		AD05DC131E52037F00B501C2 /* Snowman_00_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBCD1E52037F00B501C2 /* Snowman_00_01.jpg */; };
+		AD05DC141E52037F00B501C2 /* Snowman_02_00.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBCE1E52037F00B501C2 /* Snowman_02_00.jpg */; };
+		AD05DC151E52037F00B501C2 /* Snowman_03_00.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBCF1E52037F00B501C2 /* Snowman_03_00.jpg */; };
+		AD05DC161E52037F00B501C2 /* Snowman_03_03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBD01E52037F00B501C2 /* Snowman_03_03.jpg */; };
+		AD05DC171E52037F00B501C2 /* Snowman_07_04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBD11E52037F00B501C2 /* Snowman_07_04.jpg */; };
+		AD05DC181E52037F00B501C2 /* Snowman_03_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBD21E52037F00B501C2 /* Snowman_03_01.jpg */; };
+		AD05DC191E52037F00B501C2 /* Snowman_00_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBD31E52037F00B501C2 /* Snowman_00_02.jpg */; };
+		AD05DC1A1E52037F00B501C2 /* Snowman_05_00.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBD41E52037F00B501C2 /* Snowman_05_00.jpg */; };
+		AD05DC1B1E52037F00B501C2 /* Snowman_03_05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBD51E52037F00B501C2 /* Snowman_03_05.jpg */; };
+		AD05DC1C1E52037F00B501C2 /* Snowman_04_00.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBD61E52037F00B501C2 /* Snowman_04_00.jpg */; };
+		AD05DC1D1E52037F00B501C2 /* Snowman_07_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBD71E52037F00B501C2 /* Snowman_07_02.jpg */; };
+		AD05DC1E1E52037F00B501C2 /* Snowman_08_06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBD81E52037F00B501C2 /* Snowman_08_06.jpg */; };
+		AD05DC1F1E52037F00B501C2 /* Snowman_05_06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBD91E52037F00B501C2 /* Snowman_05_06.jpg */; };
+		AD05DC201E52037F00B501C2 /* Snowman_07_06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBDA1E52037F00B501C2 /* Snowman_07_06.jpg */; };
+		AD05DC211E52037F00B501C2 /* Snowman_09_00.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBDB1E52037F00B501C2 /* Snowman_09_00.jpg */; };
+		AD05DC221E52037F00B501C2 /* Snowman_05_03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBDC1E52037F00B501C2 /* Snowman_05_03.jpg */; };
+		AD05DC231E52037F00B501C2 /* Snowman_00_04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBDD1E52037F00B501C2 /* Snowman_00_04.jpg */; };
+		AD05DC241E52037F00B501C2 /* Snowman_02_03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBDE1E52037F00B501C2 /* Snowman_02_03.jpg */; };
+		AD05DC251E52037F00B501C2 /* Snowman_06_00.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBDF1E52037F00B501C2 /* Snowman_06_00.jpg */; };
+		AD05DC261E52037F00B501C2 /* Snowman_04_04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBE01E52037F00B501C2 /* Snowman_04_04.jpg */; };
+		AD05DC271E52037F00B501C2 /* Snowman_02_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBE11E52037F00B501C2 /* Snowman_02_02.jpg */; };
+		AD05DC281E52037F00B501C2 /* Snowman_00_03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBE21E52037F00B501C2 /* Snowman_00_03.jpg */; };
+		AD05DC291E52037F00B501C2 /* Snowman_05_04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBE31E52037F00B501C2 /* Snowman_05_04.jpg */; };
+		AD05DC2A1E52037F00B501C2 /* Snowman_05_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBE41E52037F00B501C2 /* Snowman_05_02.jpg */; };
+		AD05DC2B1E52037F00B501C2 /* Snowman_00_05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBE51E52037F00B501C2 /* Snowman_00_05.jpg */; };
+		AD05DC2C1E52037F00B501C2 /* Snowman_05_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBE61E52037F00B501C2 /* Snowman_05_01.jpg */; };
+		AD05DC2D1E52037F00B501C2 /* Snowman_06_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBE71E52037F00B501C2 /* Snowman_06_02.jpg */; };
+		AD05DC2E1E52037F00B501C2 /* Snowman_06_04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBE81E52037F00B501C2 /* Snowman_06_04.jpg */; };
+		AD05DC2F1E52037F00B501C2 /* Snowman_07_00.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBE91E52037F00B501C2 /* Snowman_07_00.jpg */; };
+		AD05DC301E52037F00B501C2 /* Snowman_06_05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBEA1E52037F00B501C2 /* Snowman_06_05.jpg */; };
+		AD05DC311E52037F00B501C2 /* Snowman_01_04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBEB1E52037F00B501C2 /* Snowman_01_04.jpg */; };
+		AD05DC321E52037F00B501C2 /* Snowman_07_05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBEC1E52037F00B501C2 /* Snowman_07_05.jpg */; };
+		AD05DC331E52037F00B501C2 /* Snowman_04_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBED1E52037F00B501C2 /* Snowman_04_01.jpg */; };
+		AD05DC341E52037F00B501C2 /* Snowman_06_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBEE1E52037F00B501C2 /* Snowman_06_01.jpg */; };
+		AD05DC351E52037F00B501C2 /* Snowman_08_00.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBEF1E52037F00B501C2 /* Snowman_08_00.jpg */; };
+		AD05DC361E52037F00B501C2 /* Snowman_04_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBF01E52037F00B501C2 /* Snowman_04_02.jpg */; };
+		AD05DC371E52037F00B501C2 /* Snowman_08_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBF11E52037F00B501C2 /* Snowman_08_01.jpg */; };
+		AD05DC381E52037F00B501C2 /* Snowman_04_03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBF21E52037F00B501C2 /* Snowman_04_03.jpg */; };
+		AD05DC391E52037F00B501C2 /* Snowman_08_04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBF31E52037F00B501C2 /* Snowman_08_04.jpg */; };
+		AD05DC3A1E52037F00B501C2 /* Snowman_08_05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBF41E52037F00B501C2 /* Snowman_08_05.jpg */; };
+		AD05DC3B1E52037F00B501C2 /* Snowman_01_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBF51E52037F00B501C2 /* Snowman_01_02.jpg */; };
+		AD05DC3C1E52037F00B501C2 /* Snowman_08_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBF61E52037F00B501C2 /* Snowman_08_02.jpg */; };
+		AD05DC3D1E52037F00B501C2 /* Snowman_08_03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBF71E52037F00B501C2 /* Snowman_08_03.jpg */; };
+		AD05DC3E1E52037F00B501C2 /* Snowman_02_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBF81E52037F00B501C2 /* Snowman_02_01.jpg */; };
+		AD05DC3F1E52037F00B501C2 /* Snowman_03_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBF91E52037F00B501C2 /* Snowman_03_02.jpg */; };
+		AD05DC401E52037F00B501C2 /* Snowman_02_05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBFA1E52037F00B501C2 /* Snowman_02_05.jpg */; };
+		AD05DC411E52037F00B501C2 /* Snowman_09_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBFB1E52037F00B501C2 /* Snowman_09_01.jpg */; };
+		AD05DC421E52037F00B501C2 /* Snowman_09_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBFC1E52037F00B501C2 /* Snowman_09_02.jpg */; };
+		AD05DC431E52037F00B501C2 /* Snowman_02_04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBFD1E52037F00B501C2 /* Snowman_02_04.jpg */; };
+		AD05DC441E52037F00B501C2 /* Snowman_09_03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBFE1E52037F00B501C2 /* Snowman_09_03.jpg */; };
+		AD05DC451E52037F00B501C2 /* Snowman_05_05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DBFF1E52037F00B501C2 /* Snowman_05_05.jpg */; };
+		AD05DC461E52037F00B501C2 /* Snowman_09_04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DC001E52037F00B501C2 /* Snowman_09_04.jpg */; };
+		AD05DC471E52037F00B501C2 /* Snowman_09_05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DC011E52037F00B501C2 /* Snowman_09_05.jpg */; };
+		AD05DC481E52037F00B501C2 /* Snowman_09_06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DC021E52037F00B501C2 /* Snowman_09_06.jpg */; };
+		AD05DC4B1E52081B00B501C2 /* FastCATiledLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = AD05DC4A1E52081B00B501C2 /* FastCATiledLayer.m */; };
 		AD52C0821E4A0FA9004E8789 /* FiveController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD52C0811E4A0FA9004E8789 /* FiveController.m */; };
 		ADA82A301E4B17AB00E5F585 /* SixController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA82A2F1E4B17AB00E5F585 /* SixController.m */; };
 		ADA82A321E4B184400E5F585 /* SixController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADA82A311E4B184400E5F585 /* SixController.xib */; };
@@ -33,6 +104,78 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD05DBBD1E52037F00B501C2 /* Snowman_00_00.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_00_00.jpg; sourceTree = "<group>"; };
+		AD05DBBE1E52037F00B501C2 /* Snowman_00_06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_00_06.jpg; sourceTree = "<group>"; };
+		AD05DBBF1E52037F00B501C2 /* Snowman_01_01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_01_01.jpg; sourceTree = "<group>"; };
+		AD05DBC01E52037F00B501C2 /* Snowman_01_06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_01_06.jpg; sourceTree = "<group>"; };
+		AD05DBC11E52037F00B501C2 /* Snowman_04_05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_04_05.jpg; sourceTree = "<group>"; };
+		AD05DBC21E52037F00B501C2 /* Snowman_04_06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_04_06.jpg; sourceTree = "<group>"; };
+		AD05DBC31E52037F00B501C2 /* Snowman_02_06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_02_06.jpg; sourceTree = "<group>"; };
+		AD05DBC41E52037F00B501C2 /* Snowman_03_06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_03_06.jpg; sourceTree = "<group>"; };
+		AD05DBC51E52037F00B501C2 /* Snowman_06_06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_06_06.jpg; sourceTree = "<group>"; };
+		AD05DBC61E52037F00B501C2 /* Snowman_07_03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_07_03.jpg; sourceTree = "<group>"; };
+		AD05DBC71E52037F00B501C2 /* Snowman_01_00.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_01_00.jpg; sourceTree = "<group>"; };
+		AD05DBC81E52037F00B501C2 /* Snowman_01_03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_01_03.jpg; sourceTree = "<group>"; };
+		AD05DBC91E52037F00B501C2 /* Snowman_01_05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_01_05.jpg; sourceTree = "<group>"; };
+		AD05DBCA1E52037F00B501C2 /* Snowman_07_01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_07_01.jpg; sourceTree = "<group>"; };
+		AD05DBCB1E52037F00B501C2 /* Snowman_06_03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_06_03.jpg; sourceTree = "<group>"; };
+		AD05DBCC1E52037F00B501C2 /* Snowman_03_04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_03_04.jpg; sourceTree = "<group>"; };
+		AD05DBCD1E52037F00B501C2 /* Snowman_00_01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_00_01.jpg; sourceTree = "<group>"; };
+		AD05DBCE1E52037F00B501C2 /* Snowman_02_00.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_02_00.jpg; sourceTree = "<group>"; };
+		AD05DBCF1E52037F00B501C2 /* Snowman_03_00.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_03_00.jpg; sourceTree = "<group>"; };
+		AD05DBD01E52037F00B501C2 /* Snowman_03_03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_03_03.jpg; sourceTree = "<group>"; };
+		AD05DBD11E52037F00B501C2 /* Snowman_07_04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_07_04.jpg; sourceTree = "<group>"; };
+		AD05DBD21E52037F00B501C2 /* Snowman_03_01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_03_01.jpg; sourceTree = "<group>"; };
+		AD05DBD31E52037F00B501C2 /* Snowman_00_02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_00_02.jpg; sourceTree = "<group>"; };
+		AD05DBD41E52037F00B501C2 /* Snowman_05_00.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_05_00.jpg; sourceTree = "<group>"; };
+		AD05DBD51E52037F00B501C2 /* Snowman_03_05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_03_05.jpg; sourceTree = "<group>"; };
+		AD05DBD61E52037F00B501C2 /* Snowman_04_00.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_04_00.jpg; sourceTree = "<group>"; };
+		AD05DBD71E52037F00B501C2 /* Snowman_07_02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_07_02.jpg; sourceTree = "<group>"; };
+		AD05DBD81E52037F00B501C2 /* Snowman_08_06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_08_06.jpg; sourceTree = "<group>"; };
+		AD05DBD91E52037F00B501C2 /* Snowman_05_06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_05_06.jpg; sourceTree = "<group>"; };
+		AD05DBDA1E52037F00B501C2 /* Snowman_07_06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_07_06.jpg; sourceTree = "<group>"; };
+		AD05DBDB1E52037F00B501C2 /* Snowman_09_00.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_09_00.jpg; sourceTree = "<group>"; };
+		AD05DBDC1E52037F00B501C2 /* Snowman_05_03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_05_03.jpg; sourceTree = "<group>"; };
+		AD05DBDD1E52037F00B501C2 /* Snowman_00_04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_00_04.jpg; sourceTree = "<group>"; };
+		AD05DBDE1E52037F00B501C2 /* Snowman_02_03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_02_03.jpg; sourceTree = "<group>"; };
+		AD05DBDF1E52037F00B501C2 /* Snowman_06_00.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_06_00.jpg; sourceTree = "<group>"; };
+		AD05DBE01E52037F00B501C2 /* Snowman_04_04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_04_04.jpg; sourceTree = "<group>"; };
+		AD05DBE11E52037F00B501C2 /* Snowman_02_02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_02_02.jpg; sourceTree = "<group>"; };
+		AD05DBE21E52037F00B501C2 /* Snowman_00_03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_00_03.jpg; sourceTree = "<group>"; };
+		AD05DBE31E52037F00B501C2 /* Snowman_05_04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_05_04.jpg; sourceTree = "<group>"; };
+		AD05DBE41E52037F00B501C2 /* Snowman_05_02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_05_02.jpg; sourceTree = "<group>"; };
+		AD05DBE51E52037F00B501C2 /* Snowman_00_05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_00_05.jpg; sourceTree = "<group>"; };
+		AD05DBE61E52037F00B501C2 /* Snowman_05_01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_05_01.jpg; sourceTree = "<group>"; };
+		AD05DBE71E52037F00B501C2 /* Snowman_06_02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_06_02.jpg; sourceTree = "<group>"; };
+		AD05DBE81E52037F00B501C2 /* Snowman_06_04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_06_04.jpg; sourceTree = "<group>"; };
+		AD05DBE91E52037F00B501C2 /* Snowman_07_00.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_07_00.jpg; sourceTree = "<group>"; };
+		AD05DBEA1E52037F00B501C2 /* Snowman_06_05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_06_05.jpg; sourceTree = "<group>"; };
+		AD05DBEB1E52037F00B501C2 /* Snowman_01_04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_01_04.jpg; sourceTree = "<group>"; };
+		AD05DBEC1E52037F00B501C2 /* Snowman_07_05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_07_05.jpg; sourceTree = "<group>"; };
+		AD05DBED1E52037F00B501C2 /* Snowman_04_01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_04_01.jpg; sourceTree = "<group>"; };
+		AD05DBEE1E52037F00B501C2 /* Snowman_06_01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_06_01.jpg; sourceTree = "<group>"; };
+		AD05DBEF1E52037F00B501C2 /* Snowman_08_00.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_08_00.jpg; sourceTree = "<group>"; };
+		AD05DBF01E52037F00B501C2 /* Snowman_04_02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_04_02.jpg; sourceTree = "<group>"; };
+		AD05DBF11E52037F00B501C2 /* Snowman_08_01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_08_01.jpg; sourceTree = "<group>"; };
+		AD05DBF21E52037F00B501C2 /* Snowman_04_03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_04_03.jpg; sourceTree = "<group>"; };
+		AD05DBF31E52037F00B501C2 /* Snowman_08_04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_08_04.jpg; sourceTree = "<group>"; };
+		AD05DBF41E52037F00B501C2 /* Snowman_08_05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_08_05.jpg; sourceTree = "<group>"; };
+		AD05DBF51E52037F00B501C2 /* Snowman_01_02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_01_02.jpg; sourceTree = "<group>"; };
+		AD05DBF61E52037F00B501C2 /* Snowman_08_02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_08_02.jpg; sourceTree = "<group>"; };
+		AD05DBF71E52037F00B501C2 /* Snowman_08_03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_08_03.jpg; sourceTree = "<group>"; };
+		AD05DBF81E52037F00B501C2 /* Snowman_02_01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_02_01.jpg; sourceTree = "<group>"; };
+		AD05DBF91E52037F00B501C2 /* Snowman_03_02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_03_02.jpg; sourceTree = "<group>"; };
+		AD05DBFA1E52037F00B501C2 /* Snowman_02_05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_02_05.jpg; sourceTree = "<group>"; };
+		AD05DBFB1E52037F00B501C2 /* Snowman_09_01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_09_01.jpg; sourceTree = "<group>"; };
+		AD05DBFC1E52037F00B501C2 /* Snowman_09_02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_09_02.jpg; sourceTree = "<group>"; };
+		AD05DBFD1E52037F00B501C2 /* Snowman_02_04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_02_04.jpg; sourceTree = "<group>"; };
+		AD05DBFE1E52037F00B501C2 /* Snowman_09_03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_09_03.jpg; sourceTree = "<group>"; };
+		AD05DBFF1E52037F00B501C2 /* Snowman_05_05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_05_05.jpg; sourceTree = "<group>"; };
+		AD05DC001E52037F00B501C2 /* Snowman_09_04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_09_04.jpg; sourceTree = "<group>"; };
+		AD05DC011E52037F00B501C2 /* Snowman_09_05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_09_05.jpg; sourceTree = "<group>"; };
+		AD05DC021E52037F00B501C2 /* Snowman_09_06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_09_06.jpg; sourceTree = "<group>"; };
+		AD05DC491E52081B00B501C2 /* FastCATiledLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastCATiledLayer.h; sourceTree = "<group>"; };
+		AD05DC4A1E52081B00B501C2 /* FastCATiledLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastCATiledLayer.m; sourceTree = "<group>"; };
 		AD52C0801E4A0FA9004E8789 /* FiveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiveController.h; sourceTree = "<group>"; };
 		AD52C0811E4A0FA9004E8789 /* FiveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiveController.m; sourceTree = "<group>"; };
 		ADA82A2E1E4B17AB00E5F585 /* SixController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixController.h; sourceTree = "<group>"; };
@@ -91,6 +234,76 @@
 		AD05DBBC1E51FF9F00B501C2 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				AD05DBBD1E52037F00B501C2 /* Snowman_00_00.jpg */,
+				AD05DBBE1E52037F00B501C2 /* Snowman_00_06.jpg */,
+				AD05DBBF1E52037F00B501C2 /* Snowman_01_01.jpg */,
+				AD05DBC01E52037F00B501C2 /* Snowman_01_06.jpg */,
+				AD05DBC11E52037F00B501C2 /* Snowman_04_05.jpg */,
+				AD05DBC21E52037F00B501C2 /* Snowman_04_06.jpg */,
+				AD05DBC31E52037F00B501C2 /* Snowman_02_06.jpg */,
+				AD05DBC41E52037F00B501C2 /* Snowman_03_06.jpg */,
+				AD05DBC51E52037F00B501C2 /* Snowman_06_06.jpg */,
+				AD05DBC61E52037F00B501C2 /* Snowman_07_03.jpg */,
+				AD05DBC71E52037F00B501C2 /* Snowman_01_00.jpg */,
+				AD05DBC81E52037F00B501C2 /* Snowman_01_03.jpg */,
+				AD05DBC91E52037F00B501C2 /* Snowman_01_05.jpg */,
+				AD05DBCA1E52037F00B501C2 /* Snowman_07_01.jpg */,
+				AD05DBCB1E52037F00B501C2 /* Snowman_06_03.jpg */,
+				AD05DBCC1E52037F00B501C2 /* Snowman_03_04.jpg */,
+				AD05DBCD1E52037F00B501C2 /* Snowman_00_01.jpg */,
+				AD05DBCE1E52037F00B501C2 /* Snowman_02_00.jpg */,
+				AD05DBCF1E52037F00B501C2 /* Snowman_03_00.jpg */,
+				AD05DBD01E52037F00B501C2 /* Snowman_03_03.jpg */,
+				AD05DBD11E52037F00B501C2 /* Snowman_07_04.jpg */,
+				AD05DBD21E52037F00B501C2 /* Snowman_03_01.jpg */,
+				AD05DBD31E52037F00B501C2 /* Snowman_00_02.jpg */,
+				AD05DBD41E52037F00B501C2 /* Snowman_05_00.jpg */,
+				AD05DBD51E52037F00B501C2 /* Snowman_03_05.jpg */,
+				AD05DBD61E52037F00B501C2 /* Snowman_04_00.jpg */,
+				AD05DBD71E52037F00B501C2 /* Snowman_07_02.jpg */,
+				AD05DBD81E52037F00B501C2 /* Snowman_08_06.jpg */,
+				AD05DBD91E52037F00B501C2 /* Snowman_05_06.jpg */,
+				AD05DBDA1E52037F00B501C2 /* Snowman_07_06.jpg */,
+				AD05DBDB1E52037F00B501C2 /* Snowman_09_00.jpg */,
+				AD05DBDC1E52037F00B501C2 /* Snowman_05_03.jpg */,
+				AD05DBDD1E52037F00B501C2 /* Snowman_00_04.jpg */,
+				AD05DBDE1E52037F00B501C2 /* Snowman_02_03.jpg */,
+				AD05DBDF1E52037F00B501C2 /* Snowman_06_00.jpg */,
+				AD05DBE01E52037F00B501C2 /* Snowman_04_04.jpg */,
+				AD05DBE11E52037F00B501C2 /* Snowman_02_02.jpg */,
+				AD05DBE21E52037F00B501C2 /* Snowman_00_03.jpg */,
+				AD05DBE31E52037F00B501C2 /* Snowman_05_04.jpg */,
+				AD05DBE41E52037F00B501C2 /* Snowman_05_02.jpg */,
+				AD05DBE51E52037F00B501C2 /* Snowman_00_05.jpg */,
+				AD05DBE61E52037F00B501C2 /* Snowman_05_01.jpg */,
+				AD05DBE71E52037F00B501C2 /* Snowman_06_02.jpg */,
+				AD05DBE81E52037F00B501C2 /* Snowman_06_04.jpg */,
+				AD05DBE91E52037F00B501C2 /* Snowman_07_00.jpg */,
+				AD05DBEA1E52037F00B501C2 /* Snowman_06_05.jpg */,
+				AD05DBEB1E52037F00B501C2 /* Snowman_01_04.jpg */,
+				AD05DBEC1E52037F00B501C2 /* Snowman_07_05.jpg */,
+				AD05DBED1E52037F00B501C2 /* Snowman_04_01.jpg */,
+				AD05DBEE1E52037F00B501C2 /* Snowman_06_01.jpg */,
+				AD05DBEF1E52037F00B501C2 /* Snowman_08_00.jpg */,
+				AD05DBF01E52037F00B501C2 /* Snowman_04_02.jpg */,
+				AD05DBF11E52037F00B501C2 /* Snowman_08_01.jpg */,
+				AD05DBF21E52037F00B501C2 /* Snowman_04_03.jpg */,
+				AD05DBF31E52037F00B501C2 /* Snowman_08_04.jpg */,
+				AD05DBF41E52037F00B501C2 /* Snowman_08_05.jpg */,
+				AD05DBF51E52037F00B501C2 /* Snowman_01_02.jpg */,
+				AD05DBF61E52037F00B501C2 /* Snowman_08_02.jpg */,
+				AD05DBF71E52037F00B501C2 /* Snowman_08_03.jpg */,
+				AD05DBF81E52037F00B501C2 /* Snowman_02_01.jpg */,
+				AD05DBF91E52037F00B501C2 /* Snowman_03_02.jpg */,
+				AD05DBFA1E52037F00B501C2 /* Snowman_02_05.jpg */,
+				AD05DBFB1E52037F00B501C2 /* Snowman_09_01.jpg */,
+				AD05DBFC1E52037F00B501C2 /* Snowman_09_02.jpg */,
+				AD05DBFD1E52037F00B501C2 /* Snowman_02_04.jpg */,
+				AD05DBFE1E52037F00B501C2 /* Snowman_09_03.jpg */,
+				AD05DBFF1E52037F00B501C2 /* Snowman_05_05.jpg */,
+				AD05DC001E52037F00B501C2 /* Snowman_09_04.jpg */,
+				AD05DC011E52037F00B501C2 /* Snowman_09_05.jpg */,
+				AD05DC021E52037F00B501C2 /* Snowman_09_06.jpg */,
 			);
 			name = Image;
 			sourceTree = "<group>";
@@ -153,6 +366,8 @@
 				ADA9F2911E4EDC7500885AA5 /* ScrollView.m */,
 				ADA9F28D1E4EDA1300885AA5 /* EigthController.h */,
 				ADA9F28E1E4EDA1300885AA5 /* EigthController.m */,
+				AD05DC491E52081B00B501C2 /* FastCATiledLayer.h */,
+				AD05DC4A1E52081B00B501C2 /* FastCATiledLayer.m */,
 			);
 			path = CoreAnimationDemo;
 			sourceTree = "<group>";
@@ -232,11 +447,81 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD05DC261E52037F00B501C2 /* Snowman_04_04.jpg in Resources */,
+				AD05DC471E52037F00B501C2 /* Snowman_09_05.jpg in Resources */,
+				AD05DC2A1E52037F00B501C2 /* Snowman_05_02.jpg in Resources */,
+				AD05DC271E52037F00B501C2 /* Snowman_02_02.jpg in Resources */,
+				AD05DC1A1E52037F00B501C2 /* Snowman_05_00.jpg in Resources */,
 				ADB524D51E485C710083249D /* LaunchScreen.storyboard in Resources */,
+				AD05DC281E52037F00B501C2 /* Snowman_00_03.jpg in Resources */,
+				AD05DC331E52037F00B501C2 /* Snowman_04_01.jpg in Resources */,
+				AD05DC091E52037F00B501C2 /* Snowman_02_06.jpg in Resources */,
+				AD05DC371E52037F00B501C2 /* Snowman_08_01.jpg in Resources */,
+				AD05DC171E52037F00B501C2 /* Snowman_07_04.jpg in Resources */,
+				AD05DC141E52037F00B501C2 /* Snowman_02_00.jpg in Resources */,
+				AD05DC321E52037F00B501C2 /* Snowman_07_05.jpg in Resources */,
+				AD05DC0D1E52037F00B501C2 /* Snowman_01_00.jpg in Resources */,
 				ADA82A321E4B184400E5F585 /* SixController.xib in Resources */,
+				AD05DC251E52037F00B501C2 /* Snowman_06_00.jpg in Resources */,
+				AD05DC221E52037F00B501C2 /* Snowman_05_03.jpg in Resources */,
+				AD05DC131E52037F00B501C2 /* Snowman_00_01.jpg in Resources */,
+				AD05DC231E52037F00B501C2 /* Snowman_00_04.jpg in Resources */,
+				AD05DC0C1E52037F00B501C2 /* Snowman_07_03.jpg in Resources */,
+				AD05DC451E52037F00B501C2 /* Snowman_05_05.jpg in Resources */,
+				AD05DC0B1E52037F00B501C2 /* Snowman_06_06.jpg in Resources */,
+				AD05DC211E52037F00B501C2 /* Snowman_09_00.jpg in Resources */,
+				AD05DC431E52037F00B501C2 /* Snowman_02_04.jpg in Resources */,
+				AD05DC1D1E52037F00B501C2 /* Snowman_07_02.jpg in Resources */,
+				AD05DC1C1E52037F00B501C2 /* Snowman_04_00.jpg in Resources */,
+				AD05DC111E52037F00B501C2 /* Snowman_06_03.jpg in Resources */,
+				AD05DC2C1E52037F00B501C2 /* Snowman_05_01.jpg in Resources */,
+				AD05DC1B1E52037F00B501C2 /* Snowman_03_05.jpg in Resources */,
+				AD05DC341E52037F00B501C2 /* Snowman_06_01.jpg in Resources */,
 				ADB00E291E49B4B40069F604 /* Digits.png in Resources */,
+				AD05DC291E52037F00B501C2 /* Snowman_05_04.jpg in Resources */,
+				AD05DC401E52037F00B501C2 /* Snowman_02_05.jpg in Resources */,
+				AD05DC1E1E52037F00B501C2 /* Snowman_08_06.jpg in Resources */,
+				AD05DC161E52037F00B501C2 /* Snowman_03_03.jpg in Resources */,
+				AD05DC121E52037F00B501C2 /* Snowman_03_04.jpg in Resources */,
+				AD05DC1F1E52037F00B501C2 /* Snowman_05_06.jpg in Resources */,
+				AD05DC3C1E52037F00B501C2 /* Snowman_08_02.jpg in Resources */,
+				AD05DC051E52037F00B501C2 /* Snowman_01_01.jpg in Resources */,
 				ADB524D21E485C710083249D /* Assets.xcassets in Resources */,
+				AD05DC481E52037F00B501C2 /* Snowman_09_06.jpg in Resources */,
+				AD05DC2B1E52037F00B501C2 /* Snowman_00_05.jpg in Resources */,
+				AD05DC0F1E52037F00B501C2 /* Snowman_01_05.jpg in Resources */,
+				AD05DC361E52037F00B501C2 /* Snowman_04_02.jpg in Resources */,
+				AD05DC041E52037F00B501C2 /* Snowman_00_06.jpg in Resources */,
+				AD05DC441E52037F00B501C2 /* Snowman_09_03.jpg in Resources */,
+				AD05DC2F1E52037F00B501C2 /* Snowman_07_00.jpg in Resources */,
+				AD05DC3B1E52037F00B501C2 /* Snowman_01_02.jpg in Resources */,
+				AD05DC181E52037F00B501C2 /* Snowman_03_01.jpg in Resources */,
+				AD05DC081E52037F00B501C2 /* Snowman_04_06.jpg in Resources */,
+				AD05DC3F1E52037F00B501C2 /* Snowman_03_02.jpg in Resources */,
+				AD05DC3D1E52037F00B501C2 /* Snowman_08_03.jpg in Resources */,
+				AD05DC061E52037F00B501C2 /* Snowman_01_06.jpg in Resources */,
+				AD05DC351E52037F00B501C2 /* Snowman_08_00.jpg in Resources */,
 				ADB524D01E485C710083249D /* Main.storyboard in Resources */,
+				AD05DC0E1E52037F00B501C2 /* Snowman_01_03.jpg in Resources */,
+				AD05DC071E52037F00B501C2 /* Snowman_04_05.jpg in Resources */,
+				AD05DC151E52037F00B501C2 /* Snowman_03_00.jpg in Resources */,
+				AD05DC2D1E52037F00B501C2 /* Snowman_06_02.jpg in Resources */,
+				AD05DC0A1E52037F00B501C2 /* Snowman_03_06.jpg in Resources */,
+				AD05DC421E52037F00B501C2 /* Snowman_09_02.jpg in Resources */,
+				AD05DC241E52037F00B501C2 /* Snowman_02_03.jpg in Resources */,
+				AD05DC031E52037F00B501C2 /* Snowman_00_00.jpg in Resources */,
+				AD05DC201E52037F00B501C2 /* Snowman_07_06.jpg in Resources */,
+				AD05DC2E1E52037F00B501C2 /* Snowman_06_04.jpg in Resources */,
+				AD05DC3E1E52037F00B501C2 /* Snowman_02_01.jpg in Resources */,
+				AD05DC101E52037F00B501C2 /* Snowman_07_01.jpg in Resources */,
+				AD05DC461E52037F00B501C2 /* Snowman_09_04.jpg in Resources */,
+				AD05DC191E52037F00B501C2 /* Snowman_00_02.jpg in Resources */,
+				AD05DC311E52037F00B501C2 /* Snowman_01_04.jpg in Resources */,
+				AD05DC411E52037F00B501C2 /* Snowman_09_01.jpg in Resources */,
+				AD05DC3A1E52037F00B501C2 /* Snowman_08_05.jpg in Resources */,
+				AD05DC391E52037F00B501C2 /* Snowman_08_04.jpg in Resources */,
+				AD05DC301E52037F00B501C2 /* Snowman_06_05.jpg in Resources */,
+				AD05DC381E52037F00B501C2 /* Snowman_04_03.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +537,7 @@
 				ADB524CD1E485C710083249D /* ViewController.m in Sources */,
 				ADB00E271E4975300069F604 /* FourController.m in Sources */,
 				ADA82A301E4B17AB00E5F585 /* SixController.m in Sources */,
+				AD05DC4B1E52081B00B501C2 /* FastCATiledLayer.m in Sources */,
 				ADA82A351E4B1A0900E5F585 /* TabBarController.m in Sources */,
 				AD52C0821E4A0FA9004E8789 /* FiveController.m in Sources */,
 				ADB04C611E4D8CC5002C9791 /* NSDate+Addition.m in Sources */,

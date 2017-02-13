@@ -7,8 +7,14 @@
 //
 
 #import "EigthController.h"
+#import "FastCATiledLayer.h"
 
 @interface EigthController ()<CALayerDelegate>
+{
+     CGFloat scale;
+}
+
+
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
@@ -19,6 +25,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    scale = [UIScreen mainScreen].scale;
     
     /*
      
@@ -33,13 +41,27 @@
      
      CATiledLayer 为载入大图造成的性能问题提供了解决方案：将大图分解为小片然后将他们单独加载。
      
+     把 TiledLayerDemo  切好的小图拖入项目中
+     
+     目的：  不加载大图，而是把大图裁切成很多小图，在用户拖动显示的时候，把需要显示的小图加载的界面上，以节省内存。
+     
+     
+     
+     
      */
     
     
     
-    CATiledLayer *tileLayer = [CATiledLayer layer];
-    tileLayer.frame = CGRectMake(0, 0, 2048, 2048);
+    FastCATiledLayer *tileLayer = [FastCATiledLayer layer];
+    
+    // 适配 Retina
+    tileLayer.frame = CGRectMake(0, 0, 2560 / scale, 1600 / scale);
     tileLayer.delegate = self;
+    
+    // 适配 Retina
+    tileLayer.contentsScale = [UIScreen mainScreen].scale;
+    
+    // 默认的行为是，在载入内存，显示在屏幕的时候，有一种淡入的效果，这是 CATiledLayer 的默认行为
     
     
     [self.scrollView.layer addSublayer:tileLayer];
@@ -48,8 +70,6 @@
     
     
     [tileLayer setNeedsDisplay];
-    
-    
     
 }
 
@@ -60,21 +80,17 @@
 
 
 
-
+// 加载的回调
 #pragma mark - CALayerDelegate  // 这里直接修改参数
 - (void)drawLayer:(CATiledLayer *)layer inContext:(CGContextRef)ctx{
 
     CGRect bounds = CGContextGetClipBoundingBox(ctx);
-
+    
+    NSInteger x = floor(bounds.origin.x / layer.tileSize.width * scale);
+    NSInteger y = floor(bounds.origin.y / layer.tileSize.height * scale);
+    
 //    NSLog(@"1");
     
-//    NSLog(@"")
-//
-    
-    NSInteger x = floor(bounds.origin.x / layer.tileSize.width);
-    NSInteger y = floor(bounds.origin.y / layer.tileSize.height);
-    
-    NSLog(@"1");
     
     //load tile image
     NSString *imageName = [NSString stringWithFormat: @"Snowman_%02d_%02d", (int)x, (int)y];
@@ -82,10 +98,10 @@
     UIImage *tileImage = [UIImage imageWithContentsOfFile:imagePath];
     
     //draw tile
+    
     UIGraphicsPushContext(ctx);
     [tileImage drawInRect:bounds];
     UIGraphicsPopContext();
-    
 }
 
 /*
