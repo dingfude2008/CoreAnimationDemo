@@ -1,17 +1,32 @@
 //
 //  main.m
-//  CoreAnimationDemoMac
+//  CATiledLayerDemo
 //
-//  Created by DFD on 2017/2/11.
+//  Created by DFD on 2017/2/12.
 //  Copyright © 2017年 DFD. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 #import <AppKit/AppKit.h>
 
+/*
+ 
+ 菜单 Product -> Edit Scheme
+ 
+ 左边找到run xxx点击后在右边选择Arguments面板中就可以设置XCode在运行命令行app时模拟输参数
+ 
+ 设置完成后再次run就会自动填入设置好的参数了
+ 
+ 这是输入地址
+ /Users/dingfude/Documents/2560-1600/1.jpg
+ 
+ 
+ 
+ */
+
+
+
 int main(int argc, const char * argv[]) {
-    //return NSApplicationMain(argc, argv);
-    
     @autoreleasepool {
         if (argc < 2) {
             NSLog(@"");
@@ -24,7 +39,7 @@ int main(int argc, const char * argv[]) {
         
         NSString *outputPath = [inputPath stringByDeletingPathExtension];
         
-        NSImage *image = [[NSImage alloc] initWithContentsOfFile:outputPath];
+        NSImage *image = [[NSImage alloc] initWithContentsOfFile:inputPath];
         
         NSSize size = [image size];
         
@@ -64,6 +79,5 @@ int main(int argc, const char * argv[]) {
         return 0;
     }
     
-    
-    
+
 }
