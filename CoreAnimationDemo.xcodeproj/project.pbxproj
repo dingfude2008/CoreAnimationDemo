@@ -102,6 +102,7 @@
 		ADB524DE1E4864040083249D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADB524DD1E4864040083249D /* CoreGraphics.framework */; };
 		ADB524E51E48B6B30083249D /* SecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB524E41E48B6B30083249D /* SecondController.m */; };
 		ADEEC3BE1E53418D00570B66 /* NineController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEEC3BD1E53418D00570B66 /* NineController.m */; };
+		ADEEC3C41E5347A200570B66 /* ElevenController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEEC3C31E5347A200570B66 /* ElevenController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -219,6 +220,8 @@
 		ADB524E41E48B6B30083249D /* SecondController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondController.m; sourceTree = "<group>"; };
 		ADEEC3BC1E53418D00570B66 /* NineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NineController.h; sourceTree = "<group>"; };
 		ADEEC3BD1E53418D00570B66 /* NineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NineController.m; sourceTree = "<group>"; };
+		ADEEC3C21E5347A200570B66 /* ElevenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElevenController.h; sourceTree = "<group>"; };
+		ADEEC3C31E5347A200570B66 /* ElevenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElevenController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -373,6 +376,8 @@
 				AD05DC4A1E52081B00B501C2 /* FastCATiledLayer.m */,
 				ADEEC3BC1E53418D00570B66 /* NineController.h */,
 				ADEEC3BD1E53418D00570B66 /* NineController.m */,
+				ADEEC3C21E5347A200570B66 /* ElevenController.h */,
+				ADEEC3C31E5347A200570B66 /* ElevenController.m */,
 			);
 			path = CoreAnimationDemo;
 			sourceTree = "<group>";
@@ -540,6 +545,7 @@
 				ADB04C641E4DFEDE002C9791 /* LayerLabel.m in Sources */,
 				ADA9F2921E4EDC7500885AA5 /* ScrollView.m in Sources */,
 				ADB524CD1E485C710083249D /* ViewController.m in Sources */,
+				ADEEC3C41E5347A200570B66 /* ElevenController.m in Sources */,
 				ADB00E271E4975300069F604 /* FourController.m in Sources */,
 				ADA82A301E4B17AB00E5F585 /* SixController.m in Sources */,
 				AD05DC4B1E52081B00B501C2 /* FastCATiledLayer.m in Sources */,
