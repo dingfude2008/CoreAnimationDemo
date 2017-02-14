@@ -101,6 +101,7 @@
 		ADB524D51E485C710083249D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADB524D31E485C710083249D /* LaunchScreen.storyboard */; };
 		ADB524DE1E4864040083249D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADB524DD1E4864040083249D /* CoreGraphics.framework */; };
 		ADB524E51E48B6B30083249D /* SecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB524E41E48B6B30083249D /* SecondController.m */; };
+		ADEEC3BE1E53418D00570B66 /* NineController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEEC3BD1E53418D00570B66 /* NineController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -216,6 +217,8 @@
 		ADB524DD1E4864040083249D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		ADB524E31E48B6B30083249D /* SecondController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondController.h; sourceTree = "<group>"; };
 		ADB524E41E48B6B30083249D /* SecondController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondController.m; sourceTree = "<group>"; };
+		ADEEC3BC1E53418D00570B66 /* NineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NineController.h; sourceTree = "<group>"; };
+		ADEEC3BD1E53418D00570B66 /* NineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NineController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -368,6 +371,8 @@
 				ADA9F28E1E4EDA1300885AA5 /* EigthController.m */,
 				AD05DC491E52081B00B501C2 /* FastCATiledLayer.h */,
 				AD05DC4A1E52081B00B501C2 /* FastCATiledLayer.m */,
+				ADEEC3BC1E53418D00570B66 /* NineController.h */,
+				ADEEC3BD1E53418D00570B66 /* NineController.m */,
 			);
 			path = CoreAnimationDemo;
 			sourceTree = "<group>";
@@ -541,6 +546,7 @@
 				ADA82A351E4B1A0900E5F585 /* TabBarController.m in Sources */,
 				AD52C0821E4A0FA9004E8789 /* FiveController.m in Sources */,
 				ADB04C611E4D8CC5002C9791 /* NSDate+Addition.m in Sources */,
+				ADEEC3BE1E53418D00570B66 /* NineController.m in Sources */,
 				ADAA76D91E4C616D00A9BF6A /* SevenController.m in Sources */,
 				ADB524E51E48B6B30083249D /* SecondController.m in Sources */,
 				ADA9F28C1E4ECFEC00885AA5 /* ReflectionView.m in Sources */,
