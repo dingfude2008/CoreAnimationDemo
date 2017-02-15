@@ -104,6 +104,8 @@
 		ADE560461E54790000BBB812 /* TwelveController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE560451E54790000BBB812 /* TwelveController.m */; };
 		ADE5604D1E54947C00BBB812 /* 778.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ADE5604B1E54941500BBB812 /* 778.mp4 */; };
 		ADE560501E54955A00BBB812 /* NSString+CZPath.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE5604F1E54955A00BBB812 /* NSString+CZPath.m */; };
+		ADE560581E54A1F900BBB812 /* CALayerAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE560561E54A1F900BBB812 /* CALayerAnimationController.m */; };
+		ADE560591E54A1F900BBB812 /* CALayerAnimationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE560571E54A1F900BBB812 /* CALayerAnimationController.xib */; };
 		ADEEC3BE1E53418D00570B66 /* NineController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEEC3BD1E53418D00570B66 /* NineController.m */; };
 		ADEEC3C41E5347A200570B66 /* ElevenController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEEC3C31E5347A200570B66 /* ElevenController.m */; };
 /* End PBXBuildFile section */
@@ -226,6 +228,9 @@
 		ADE5604B1E54941500BBB812 /* 778.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 778.mp4; sourceTree = "<group>"; };
 		ADE5604E1E54955A00BBB812 /* NSString+CZPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZPath.h"; sourceTree = "<group>"; };
 		ADE5604F1E54955A00BBB812 /* NSString+CZPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZPath.m"; sourceTree = "<group>"; };
+		ADE560551E54A1F900BBB812 /* CALayerAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALayerAnimationController.h; sourceTree = "<group>"; };
+		ADE560561E54A1F900BBB812 /* CALayerAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALayerAnimationController.m; sourceTree = "<group>"; };
+		ADE560571E54A1F900BBB812 /* CALayerAnimationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CALayerAnimationController.xib; sourceTree = "<group>"; };
 		ADEEC3BC1E53418D00570B66 /* NineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NineController.h; sourceTree = "<group>"; };
 		ADEEC3BD1E53418D00570B66 /* NineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NineController.m; sourceTree = "<group>"; };
 		ADEEC3C21E5347A200570B66 /* ElevenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElevenController.h; sourceTree = "<group>"; };
@@ -342,6 +347,7 @@
 		ADB524C41E485C710083249D /* CoreAnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				ADE560511E54A12400BBB812 /* VC3 */,
 				ADE560491E548F9800BBB812 /* VC2 */,
 				ADE560481E548F8600BBB812 /* VC1 */,
 				ADE560471E548F7900BBB812 /* mp4 */,
@@ -434,6 +440,16 @@
 				ADEEC3BD1E53418D00570B66 /* NineController.m */,
 			);
 			name = VC2;
+			sourceTree = "<group>";
+		};
+		ADE560511E54A12400BBB812 /* VC3 */ = {
+			isa = PBXGroup;
+			children = (
+				ADE560551E54A1F900BBB812 /* CALayerAnimationController.h */,
+				ADE560561E54A1F900BBB812 /* CALayerAnimationController.m */,
+				ADE560571E54A1F900BBB812 /* CALayerAnimationController.xib */,
+			);
+			name = VC3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -533,6 +549,7 @@
 				AD05DC121E52037F00B501C2 /* Snowman_03_04.jpg in Resources */,
 				AD05DC1F1E52037F00B501C2 /* Snowman_05_06.jpg in Resources */,
 				AD05DC3C1E52037F00B501C2 /* Snowman_08_02.jpg in Resources */,
+				ADE560591E54A1F900BBB812 /* CALayerAnimationController.xib in Resources */,
 				AD05DC051E52037F00B501C2 /* Snowman_01_01.jpg in Resources */,
 				ADB524D21E485C710083249D /* Assets.xcassets in Resources */,
 				AD05DC481E52037F00B501C2 /* Snowman_09_06.jpg in Resources */,
@@ -584,6 +601,7 @@
 				ADB04C641E4DFEDE002C9791 /* LayerLabel.m in Sources */,
 				ADA9F2921E4EDC7500885AA5 /* ScrollView.m in Sources */,
 				ADB524CD1E485C710083249D /* ViewController.m in Sources */,
+				ADE560581E54A1F900BBB812 /* CALayerAnimationController.m in Sources */,
 				ADE560501E54955A00BBB812 /* NSString+CZPath.m in Sources */,
 				ADEEC3C41E5347A200570B66 /* ElevenController.m in Sources */,
 				ADB00E271E4975300069F604 /* FourController.m in Sources */,
@@ -719,6 +737,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CoreAnimationDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dfd.testApp.CoreAnimationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -730,6 +749,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CoreAnimationDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dfd.testApp.CoreAnimationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

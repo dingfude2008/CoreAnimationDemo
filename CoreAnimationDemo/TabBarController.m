@@ -8,8 +8,9 @@
 
 #import "TabBarController.h"
 #import "SixController.h"
+#import "CALayerAnimationController.h"
 
-@interface TabBarController ()
+@interface TabBarController ()<UIActionSheetDelegate>
 
 @end
 
@@ -20,6 +21,51 @@
     // Do any additional setup after loading the view.
     
     self.selectedIndex = self.viewControllers.count - 1;
+    
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"选择" style:UIBarButtonItemStylePlain target:self action:@selector(goSelect)];;
+    
+}
+
+- (void)goSelect{
+    
+    UIActionSheet *as = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"1",@"2",@"3",@"4", nil];;
+    [as showInView:self.view];
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
+    
+    NSLog(@"%@", @(buttonIndex + 1));
+    
+    UIViewController *vc;
+    
+    switch (buttonIndex + 1) {
+        case 1:
+            vc = [[CALayerAnimationController alloc] init];
+            break;
+        case 2:
+            
+            break;
+        case 3:
+            
+            break;
+        case 4:
+            
+            break;
+        case 5:
+            
+            break;
+        case 6:
+            
+            break;
+        case 7:
+            
+            break;
+            
+        default:
+            break;
+    }
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (IBAction)rightButtonClick:(id)sender {
