@@ -36,9 +36,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self transformLayer];
     
-    
-    // [self replicatorLayerA];
+//    [self replicatorLayerA];
 }
 
 - (void)replicatorLayerA{

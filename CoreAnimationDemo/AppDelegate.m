@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "NSDate+Addition.h"
+#import "NSString+CZPath.h"
 
 @interface AppDelegate ()
 
@@ -24,7 +25,9 @@
     NSDate * _registerDateType = [NSDate dateWithString:string format:format];
     _registerDateType = [NSDate dateWithTimeInterval:13 * 60 * 60 sinceDate:_registerDateType];
     
-    NSLog(@"%@", _registerDateType);
+    //NSLog(@"%@", _registerDateType);
+    
+    NSLog(@"%@", [@"" cz_appendDocumentDir]);
     
     
     return YES;

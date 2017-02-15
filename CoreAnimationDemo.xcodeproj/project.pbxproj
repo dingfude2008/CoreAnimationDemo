@@ -101,6 +101,9 @@
 		ADB524D51E485C710083249D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADB524D31E485C710083249D /* LaunchScreen.storyboard */; };
 		ADB524DE1E4864040083249D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADB524DD1E4864040083249D /* CoreGraphics.framework */; };
 		ADB524E51E48B6B30083249D /* SecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB524E41E48B6B30083249D /* SecondController.m */; };
+		ADE560461E54790000BBB812 /* TwelveController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE560451E54790000BBB812 /* TwelveController.m */; };
+		ADE5604D1E54947C00BBB812 /* 778.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ADE5604B1E54941500BBB812 /* 778.mp4 */; };
+		ADE560501E54955A00BBB812 /* NSString+CZPath.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE5604F1E54955A00BBB812 /* NSString+CZPath.m */; };
 		ADEEC3BE1E53418D00570B66 /* NineController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEEC3BD1E53418D00570B66 /* NineController.m */; };
 		ADEEC3C41E5347A200570B66 /* ElevenController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEEC3C31E5347A200570B66 /* ElevenController.m */; };
 /* End PBXBuildFile section */
@@ -218,6 +221,11 @@
 		ADB524DD1E4864040083249D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		ADB524E31E48B6B30083249D /* SecondController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondController.h; sourceTree = "<group>"; };
 		ADB524E41E48B6B30083249D /* SecondController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondController.m; sourceTree = "<group>"; };
+		ADE560441E5478FF00BBB812 /* TwelveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwelveController.h; sourceTree = "<group>"; };
+		ADE560451E54790000BBB812 /* TwelveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwelveController.m; sourceTree = "<group>"; };
+		ADE5604B1E54941500BBB812 /* 778.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 778.mp4; sourceTree = "<group>"; };
+		ADE5604E1E54955A00BBB812 /* NSString+CZPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZPath.h"; sourceTree = "<group>"; };
+		ADE5604F1E54955A00BBB812 /* NSString+CZPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZPath.m"; sourceTree = "<group>"; };
 		ADEEC3BC1E53418D00570B66 /* NineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NineController.h; sourceTree = "<group>"; };
 		ADEEC3BD1E53418D00570B66 /* NineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NineController.m; sourceTree = "<group>"; };
 		ADEEC3C21E5347A200570B66 /* ElevenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElevenController.h; sourceTree = "<group>"; };
@@ -334,50 +342,28 @@
 		ADB524C41E485C710083249D /* CoreAnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				ADE560491E548F9800BBB812 /* VC2 */,
+				ADE560481E548F8600BBB812 /* VC1 */,
+				ADE560471E548F7900BBB812 /* mp4 */,
 				AD05DBBC1E51FF9F00B501C2 /* Image */,
 				ADB04C5F1E4D8CC5002C9791 /* NSDate+Addition.h */,
 				ADB04C601E4D8CC5002C9791 /* NSDate+Addition.m */,
+				ADE5604E1E54955A00BBB812 /* NSString+CZPath.h */,
+				ADE5604F1E54955A00BBB812 /* NSString+CZPath.m */,
 				ADB00E281E49B4B40069F604 /* Digits.png */,
 				ADB524C81E485C710083249D /* AppDelegate.h */,
 				ADB524C91E485C710083249D /* AppDelegate.m */,
 				ADA82A331E4B1A0900E5F585 /* TabBarController.h */,
 				ADA82A341E4B1A0900E5F585 /* TabBarController.m */,
-				ADB524CB1E485C710083249D /* ViewController.h */,
-				ADB524CC1E485C710083249D /* ViewController.m */,
-				ADB524E31E48B6B30083249D /* SecondController.h */,
-				ADB524E41E48B6B30083249D /* SecondController.m */,
-				ADB00E221E4961550069F604 /* ThirdController.h */,
-				ADB00E231E4961550069F604 /* ThirdController.m */,
-				ADB00E251E4975300069F604 /* FourController.h */,
-				ADB00E261E4975300069F604 /* FourController.m */,
-				AD52C0801E4A0FA9004E8789 /* FiveController.h */,
-				AD52C0811E4A0FA9004E8789 /* FiveController.m */,
 				ADB524CE1E485C710083249D /* Main.storyboard */,
 				ADB524D11E485C710083249D /* Assets.xcassets */,
 				ADB524D31E485C710083249D /* LaunchScreen.storyboard */,
 				ADB524D61E485C710083249D /* Info.plist */,
 				ADB524C51E485C710083249D /* Supporting Files */,
-				ADA82A2E1E4B17AB00E5F585 /* SixController.h */,
-				ADA82A2F1E4B17AB00E5F585 /* SixController.m */,
-				ADA82A311E4B184400E5F585 /* SixController.xib */,
-				ADAA76D71E4C616D00A9BF6A /* SevenController.h */,
-				ADAA76D81E4C616D00A9BF6A /* SevenController.m */,
-				ADB04C621E4DFEDE002C9791 /* LayerLabel.h */,
-				ADB04C631E4DFEDE002C9791 /* LayerLabel.m */,
-				ADB04C651E4E04E0002C9791 /* CATransformLayerController.h */,
-				ADB04C661E4E04E0002C9791 /* CATranformLayerController.m */,
-				ADA9F28A1E4ECFEC00885AA5 /* ReflectionView.h */,
-				ADA9F28B1E4ECFEC00885AA5 /* ReflectionView.m */,
-				ADA9F2901E4EDC7500885AA5 /* ScrollView.h */,
-				ADA9F2911E4EDC7500885AA5 /* ScrollView.m */,
-				ADA9F28D1E4EDA1300885AA5 /* EigthController.h */,
-				ADA9F28E1E4EDA1300885AA5 /* EigthController.m */,
-				AD05DC491E52081B00B501C2 /* FastCATiledLayer.h */,
-				AD05DC4A1E52081B00B501C2 /* FastCATiledLayer.m */,
-				ADEEC3BC1E53418D00570B66 /* NineController.h */,
-				ADEEC3BD1E53418D00570B66 /* NineController.m */,
 				ADEEC3C21E5347A200570B66 /* ElevenController.h */,
 				ADEEC3C31E5347A200570B66 /* ElevenController.m */,
+				ADE560441E5478FF00BBB812 /* TwelveController.h */,
+				ADE560451E54790000BBB812 /* TwelveController.m */,
 			);
 			path = CoreAnimationDemo;
 			sourceTree = "<group>";
@@ -397,6 +383,57 @@
 				ADB524DD1E4864040083249D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADE560471E548F7900BBB812 /* mp4 */ = {
+			isa = PBXGroup;
+			children = (
+				ADE5604B1E54941500BBB812 /* 778.mp4 */,
+			);
+			name = mp4;
+			sourceTree = "<group>";
+		};
+		ADE560481E548F8600BBB812 /* VC1 */ = {
+			isa = PBXGroup;
+			children = (
+				ADB524CB1E485C710083249D /* ViewController.h */,
+				ADB524CC1E485C710083249D /* ViewController.m */,
+				ADB524E31E48B6B30083249D /* SecondController.h */,
+				ADB524E41E48B6B30083249D /* SecondController.m */,
+				ADB00E221E4961550069F604 /* ThirdController.h */,
+				ADB00E231E4961550069F604 /* ThirdController.m */,
+				ADB00E251E4975300069F604 /* FourController.h */,
+				ADB00E261E4975300069F604 /* FourController.m */,
+				AD52C0801E4A0FA9004E8789 /* FiveController.h */,
+				AD52C0811E4A0FA9004E8789 /* FiveController.m */,
+			);
+			name = VC1;
+			sourceTree = "<group>";
+		};
+		ADE560491E548F9800BBB812 /* VC2 */ = {
+			isa = PBXGroup;
+			children = (
+				ADA82A2E1E4B17AB00E5F585 /* SixController.h */,
+				ADA82A2F1E4B17AB00E5F585 /* SixController.m */,
+				ADA82A311E4B184400E5F585 /* SixController.xib */,
+				ADAA76D71E4C616D00A9BF6A /* SevenController.h */,
+				ADAA76D81E4C616D00A9BF6A /* SevenController.m */,
+				ADB04C621E4DFEDE002C9791 /* LayerLabel.h */,
+				ADB04C631E4DFEDE002C9791 /* LayerLabel.m */,
+				ADB04C651E4E04E0002C9791 /* CATransformLayerController.h */,
+				ADB04C661E4E04E0002C9791 /* CATranformLayerController.m */,
+				ADA9F28A1E4ECFEC00885AA5 /* ReflectionView.h */,
+				ADA9F28B1E4ECFEC00885AA5 /* ReflectionView.m */,
+				ADA9F2901E4EDC7500885AA5 /* ScrollView.h */,
+				ADA9F2911E4EDC7500885AA5 /* ScrollView.m */,
+				ADA9F28D1E4EDA1300885AA5 /* EigthController.h */,
+				ADA9F28E1E4EDA1300885AA5 /* EigthController.m */,
+				AD05DC491E52081B00B501C2 /* FastCATiledLayer.h */,
+				AD05DC4A1E52081B00B501C2 /* FastCATiledLayer.m */,
+				ADEEC3BC1E53418D00570B66 /* NineController.h */,
+				ADEEC3BD1E53418D00570B66 /* NineController.m */,
+			);
+			name = VC2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -485,6 +522,7 @@
 				AD05DC1C1E52037F00B501C2 /* Snowman_04_00.jpg in Resources */,
 				AD05DC111E52037F00B501C2 /* Snowman_06_03.jpg in Resources */,
 				AD05DC2C1E52037F00B501C2 /* Snowman_05_01.jpg in Resources */,
+				ADE5604D1E54947C00BBB812 /* 778.mp4 in Resources */,
 				AD05DC1B1E52037F00B501C2 /* Snowman_03_05.jpg in Resources */,
 				AD05DC341E52037F00B501C2 /* Snowman_06_01.jpg in Resources */,
 				ADB00E291E49B4B40069F604 /* Digits.png in Resources */,
@@ -542,9 +580,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADE560461E54790000BBB812 /* TwelveController.m in Sources */,
 				ADB04C641E4DFEDE002C9791 /* LayerLabel.m in Sources */,
 				ADA9F2921E4EDC7500885AA5 /* ScrollView.m in Sources */,
 				ADB524CD1E485C710083249D /* ViewController.m in Sources */,
+				ADE560501E54955A00BBB812 /* NSString+CZPath.m in Sources */,
 				ADEEC3C41E5347A200570B66 /* ElevenController.m in Sources */,
 				ADB00E271E4975300069F604 /* FourController.m in Sources */,
 				ADA82A301E4B17AB00E5F585 /* SixController.m in Sources */,

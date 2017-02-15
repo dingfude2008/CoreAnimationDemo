@@ -147,7 +147,6 @@
     // 防止layer像素化
     textLayer.contentsScale = [UIScreen mainScreen].scale;
     
-    
 }
 
 - (void)setShaperView{
