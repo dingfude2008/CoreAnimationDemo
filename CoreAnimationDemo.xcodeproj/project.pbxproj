@@ -80,6 +80,8 @@
 		AD05DC4B1E52081B00B501C2 /* FastCATiledLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = AD05DC4A1E52081B00B501C2 /* FastCATiledLayer.m */; };
 		AD106D6D1E55E4F20038E3D2 /* PresentationModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD106D6B1E55E4F20038E3D2 /* PresentationModelController.m */; };
 		AD106D6E1E55E4F20038E3D2 /* PresentationModelController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD106D6C1E55E4F20038E3D2 /* PresentationModelController.xib */; };
+		AD106D771E55F4580038E3D2 /* XianShiAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD106D751E55F4580038E3D2 /* XianShiAnimationController.m */; };
+		AD106D781E55F4580038E3D2 /* XianShiAnimationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD106D761E55F4580038E3D2 /* XianShiAnimationController.xib */; };
 		AD52C0821E4A0FA9004E8789 /* FiveController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD52C0811E4A0FA9004E8789 /* FiveController.m */; };
 		AD953FE91E556C53002A2475 /* NSDate+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = AD953FE81E556C53002A2475 /* NSDate+Addition.m */; };
 		ADA82A301E4B17AB00E5F585 /* SixController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA82A2F1E4B17AB00E5F585 /* SixController.m */; };
@@ -188,6 +190,9 @@
 		AD106D6A1E55E4F20038E3D2 /* PresentationModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentationModelController.h; sourceTree = "<group>"; };
 		AD106D6B1E55E4F20038E3D2 /* PresentationModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentationModelController.m; sourceTree = "<group>"; };
 		AD106D6C1E55E4F20038E3D2 /* PresentationModelController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PresentationModelController.xib; sourceTree = "<group>"; };
+		AD106D741E55F4580038E3D2 /* XianShiAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XianShiAnimationController.h; sourceTree = "<group>"; };
+		AD106D751E55F4580038E3D2 /* XianShiAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XianShiAnimationController.m; sourceTree = "<group>"; };
+		AD106D761E55F4580038E3D2 /* XianShiAnimationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XianShiAnimationController.xib; sourceTree = "<group>"; };
 		AD52C0801E4A0FA9004E8789 /* FiveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiveController.h; sourceTree = "<group>"; };
 		AD52C0811E4A0FA9004E8789 /* FiveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiveController.m; sourceTree = "<group>"; };
 		AD953FE71E556C53002A2475 /* NSDate+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Addition.h"; sourceTree = "<group>"; };
@@ -456,6 +461,9 @@
 				AD106D6A1E55E4F20038E3D2 /* PresentationModelController.h */,
 				AD106D6B1E55E4F20038E3D2 /* PresentationModelController.m */,
 				AD106D6C1E55E4F20038E3D2 /* PresentationModelController.xib */,
+				AD106D741E55F4580038E3D2 /* XianShiAnimationController.h */,
+				AD106D751E55F4580038E3D2 /* XianShiAnimationController.m */,
+				AD106D761E55F4580038E3D2 /* XianShiAnimationController.xib */,
 			);
 			name = VC3;
 			sourceTree = "<group>";
@@ -552,6 +560,7 @@
 				ADB00E291E49B4B40069F604 /* Digits.png in Resources */,
 				AD05DC291E52037F00B501C2 /* Snowman_05_04.jpg in Resources */,
 				AD05DC401E52037F00B501C2 /* Snowman_02_05.jpg in Resources */,
+				AD106D781E55F4580038E3D2 /* XianShiAnimationController.xib in Resources */,
 				AD05DC1E1E52037F00B501C2 /* Snowman_08_06.jpg in Resources */,
 				AD05DC161E52037F00B501C2 /* Snowman_03_03.jpg in Resources */,
 				AD05DC121E52037F00B501C2 /* Snowman_03_04.jpg in Resources */,
@@ -621,6 +630,7 @@
 				ADEEC3BE1E53418D00570B66 /* NineController.m in Sources */,
 				AD106D6D1E55E4F20038E3D2 /* PresentationModelController.m in Sources */,
 				ADAA76D91E4C616D00A9BF6A /* SevenController.m in Sources */,
+				AD106D771E55F4580038E3D2 /* XianShiAnimationController.m in Sources */,
 				ADB524E51E48B6B30083249D /* SecondController.m in Sources */,
 				ADA9F28C1E4ECFEC00885AA5 /* ReflectionView.m in Sources */,
 				AD953FE91E556C53002A2475 /* NSDate+Addition.m in Sources */,

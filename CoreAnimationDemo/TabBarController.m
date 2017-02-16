@@ -10,6 +10,7 @@
 #import "SixController.h"
 #import "CALayerAnimationController.h"
 #import "PresentationModelController.h"
+#import "XianShiAnimationController.h"
 
 @interface TabBarController ()<UIActionSheetDelegate>
 
@@ -49,6 +50,7 @@
 
             break;
         case 3:
+            vc = [[XianShiAnimationController alloc] init];
             
             break;
         case 4:
