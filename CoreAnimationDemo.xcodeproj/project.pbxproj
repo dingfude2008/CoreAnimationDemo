@@ -78,6 +78,8 @@
 		AD05DC471E52037F00B501C2 /* Snowman_09_05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DC011E52037F00B501C2 /* Snowman_09_05.jpg */; };
 		AD05DC481E52037F00B501C2 /* Snowman_09_06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DC021E52037F00B501C2 /* Snowman_09_06.jpg */; };
 		AD05DC4B1E52081B00B501C2 /* FastCATiledLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = AD05DC4A1E52081B00B501C2 /* FastCATiledLayer.m */; };
+		AD106D6D1E55E4F20038E3D2 /* PresentationModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD106D6B1E55E4F20038E3D2 /* PresentationModelController.m */; };
+		AD106D6E1E55E4F20038E3D2 /* PresentationModelController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD106D6C1E55E4F20038E3D2 /* PresentationModelController.xib */; };
 		AD52C0821E4A0FA9004E8789 /* FiveController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD52C0811E4A0FA9004E8789 /* FiveController.m */; };
 		AD953FE91E556C53002A2475 /* NSDate+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = AD953FE81E556C53002A2475 /* NSDate+Addition.m */; };
 		ADA82A301E4B17AB00E5F585 /* SixController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA82A2F1E4B17AB00E5F585 /* SixController.m */; };
@@ -183,6 +185,9 @@
 		AD05DC021E52037F00B501C2 /* Snowman_09_06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_09_06.jpg; sourceTree = "<group>"; };
 		AD05DC491E52081B00B501C2 /* FastCATiledLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastCATiledLayer.h; sourceTree = "<group>"; };
 		AD05DC4A1E52081B00B501C2 /* FastCATiledLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastCATiledLayer.m; sourceTree = "<group>"; };
+		AD106D6A1E55E4F20038E3D2 /* PresentationModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentationModelController.h; sourceTree = "<group>"; };
+		AD106D6B1E55E4F20038E3D2 /* PresentationModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentationModelController.m; sourceTree = "<group>"; };
+		AD106D6C1E55E4F20038E3D2 /* PresentationModelController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PresentationModelController.xib; sourceTree = "<group>"; };
 		AD52C0801E4A0FA9004E8789 /* FiveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiveController.h; sourceTree = "<group>"; };
 		AD52C0811E4A0FA9004E8789 /* FiveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiveController.m; sourceTree = "<group>"; };
 		AD953FE71E556C53002A2475 /* NSDate+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Addition.h"; sourceTree = "<group>"; };
@@ -448,6 +453,9 @@
 				ADE560551E54A1F900BBB812 /* CALayerAnimationController.h */,
 				ADE560561E54A1F900BBB812 /* CALayerAnimationController.m */,
 				ADE560571E54A1F900BBB812 /* CALayerAnimationController.xib */,
+				AD106D6A1E55E4F20038E3D2 /* PresentationModelController.h */,
+				AD106D6B1E55E4F20038E3D2 /* PresentationModelController.m */,
+				AD106D6C1E55E4F20038E3D2 /* PresentationModelController.xib */,
 			);
 			name = VC3;
 			sourceTree = "<group>";
@@ -573,6 +581,7 @@
 				AD05DC2D1E52037F00B501C2 /* Snowman_06_02.jpg in Resources */,
 				AD05DC0A1E52037F00B501C2 /* Snowman_03_06.jpg in Resources */,
 				AD05DC421E52037F00B501C2 /* Snowman_09_02.jpg in Resources */,
+				AD106D6E1E55E4F20038E3D2 /* PresentationModelController.xib in Resources */,
 				AD05DC241E52037F00B501C2 /* Snowman_02_03.jpg in Resources */,
 				AD05DC031E52037F00B501C2 /* Snowman_00_00.jpg in Resources */,
 				AD05DC201E52037F00B501C2 /* Snowman_07_06.jpg in Resources */,
@@ -610,6 +619,7 @@
 				ADA82A351E4B1A0900E5F585 /* TabBarController.m in Sources */,
 				AD52C0821E4A0FA9004E8789 /* FiveController.m in Sources */,
 				ADEEC3BE1E53418D00570B66 /* NineController.m in Sources */,
+				AD106D6D1E55E4F20038E3D2 /* PresentationModelController.m in Sources */,
 				ADAA76D91E4C616D00A9BF6A /* SevenController.m in Sources */,
 				ADB524E51E48B6B30083249D /* SecondController.m in Sources */,
 				ADA9F28C1E4ECFEC00885AA5 /* ReflectionView.m in Sources */,

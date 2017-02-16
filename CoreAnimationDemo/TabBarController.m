@@ -9,6 +9,7 @@
 #import "TabBarController.h"
 #import "SixController.h"
 #import "CALayerAnimationController.h"
+#import "PresentationModelController.h"
 
 @interface TabBarController ()<UIActionSheetDelegate>
 
@@ -44,7 +45,8 @@
             vc = [[CALayerAnimationController alloc] init];
             break;
         case 2:
-            
+            vc = [[PresentationModelController alloc] init];
+
             break;
         case 3:
             
