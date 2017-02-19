@@ -95,6 +95,10 @@
     
     [viewController.view.layer addAnimation:transition forKey:nil];
     
+    NSLog(@"%@", @(viewController.view.layer == self.tabBarController.view.layer));
+    
+    NSLog(@"%@ %@, %@", viewController.view.layer, self.tabBarController.view.layer, [viewController.view.layer superlayer]);
+    
     
     
 }

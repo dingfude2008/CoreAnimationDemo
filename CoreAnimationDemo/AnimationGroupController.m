@@ -26,6 +26,10 @@
                     [UIImage imageNamed:@"Snowman_00_03.jpg"]];
     
     [self setView2];
+    
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
 - (void)setView2{
@@ -73,11 +77,19 @@
      
      */
     
+    
+    
 }
 - (IBAction)swithImage:(id)sender {
+    [self customAnimation];
+}
+
+/// 使用 UIView
+- (void)transitionView{
     
     CATransition *transition = [CATransition animation];
     transition.type = kCATransitionFade;
+    
     [self.imageView.layer addAnimation:transition forKey:nil];
     
     UIImage *image = self.imageView.image;
@@ -87,6 +99,94 @@
     
 }
 
+- (void)useUIViewTransition{
+    
+    /*
+        这里的过渡动画选项可以有一下
+     UIViewAnimationOptionLayoutSubviews            = 1 <<  0,
+     UIViewAnimationOptionAllowUserInteraction      = 1 <<  1, // turn on user interaction while animating
+     UIViewAnimationOptionBeginFromCurrentState     = 1 <<  2, // start all views from current value, not initial value
+     UIViewAnimationOptionRepeat                    = 1 <<  3, // repeat animation indefinitely
+     UIViewAnimationOptionAutoreverse               = 1 <<  4, // if repeat, run animation back and forth
+     UIViewAnimationOptionOverrideInheritedDuration = 1 <<  5, // ignore nested duration
+     UIViewAnimationOptionOverrideInheritedCurve    = 1 <<  6, // ignore nested curve
+     UIViewAnimationOptionAllowAnimatedContent      = 1 <<  7, // animate contents (applies to transitions only)
+     UIViewAnimationOptionShowHideTransitionViews   = 1 <<  8, // flip to/from hidden state instead of adding/removing
+     UIViewAnimationOptionOverrideInheritedOptions  = 1 <<  9, // do not inherit any options or animation type
+     
+     UIViewAnimationOptionCurveEaseInOut            = 0 << 16, // default
+     UIViewAnimationOptionCurveEaseIn               = 1 << 16,
+     UIViewAnimationOptionCurveEaseOut              = 2 << 16,
+     UIViewAnimationOptionCurveLinear               = 3 << 16,
+     
+     UIViewAnimationOptionTransitionNone            = 0 << 20, // default
+     UIViewAnimationOptionTransitionFlipFromLeft    = 1 << 20,
+     UIViewAnimationOptionTransitionFlipFromRight   = 2 << 20,
+     UIViewAnimationOptionTransitionCurlUp          = 3 << 20,
+     UIViewAnimationOptionTransitionCurlDown        = 4 << 20,
+     UIViewAnimationOptionTransitionCrossDissolve   = 5 << 20,
+     UIViewAnimationOptionTransitionFlipFromTop     = 6 << 20,
+     UIViewAnimationOptionTransitionFlipFromBottom  = 7 << 20,
+     */
+    
+   [UIView transitionWithView:self.imageView
+                     duration:1.0
+                      options:UIViewAnimationOptionTransitionFlipFromLeft
+                   animations:^{
+                       UIImage *image = self.imageView.image;
+                       NSUInteger index = [self.images indexOfObject:image];
+                       index = (index + 1) % self.images.count;
+                       self.imageView.image = self.images[index];
+                   } completion:^(BOOL finished) {
+    
+                   }];
+}
+
+
+/**
+ 自定义动画，使用属性动画
+ 原理是，对图层进行截图，然后使用属性动画来代替 CATransition 或者 UIKit 的过渡方法来动画
+ */
+- (void)customAnimation{
+    
+    // 因为使用 CATransition 来做自定义动画的时候，还有实现协议，在协议中把动画定位到动画结束时，所以使用 UIKit的过渡方法
+    
+    // 开始
+    UIGraphicsBeginImageContextWithOptions(self.view.bounds.size, YES, 0.0);
+    
+    // 绘制到 Core Graphics的上下文捕获当前内容的图片
+    [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    
+    UIImage *coverImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIView *coverView = [[UIImageView alloc] initWithImage:coverImage];
+    
+    coverView.frame = self.view.bounds;
+    
+    [self.view addSubview:coverView];
+    
+    CGFloat red = arc4random() / (CGFloat)INT_MAX;
+    CGFloat green = arc4random() / (CGFloat)INT_MAX;
+    CGFloat blue = arc4random() / (CGFloat)INT_MAX;
+    self.view.backgroundColor = [UIColor colorWithRed:red green:green blue:blue alpha:1.0];
+    
+    [UIView animateWithDuration:1.0 animations:^{
+        
+        // 缩放，旋转，渐隐原视图
+        CGAffineTransform tranform = CGAffineTransformMakeScale(0.01, 0.01);
+        
+        tranform = CGAffineTransformRotate(tranform, M_PI_2);
+        
+        coverView.transform = tranform;
+        
+        coverView.alpha = 0.0;
+        
+    } completion:^(BOOL finished) {
+        
+        [coverView removeFromSuperview];
+        
+    }];
+}
 
 
 - (void)setView1{
