@@ -28,9 +28,66 @@
     [self.layerView.layer addSublayer:self.colorLayer];
     
     
-    [self viewSet1];
+    
+    
+    [self viewSet2];
 }
+
+- (void)viewSet2{
+    
+    
+    
+    /*
+     虚拟动画
+     
+     
+     
+     */
+    
+    CALayer *shipLayer = [CALayer layer];
+    shipLayer.frame = CGRectMake(0, 0, 128, 128);
+    shipLayer.position = CGPointMake(150, 150);
+    shipLayer.contents = (__bridge id)[UIImage imageNamed: @"Ship.png"].CGImage;
+    
+    
+    [self.containView.layer addSublayer:shipLayer];
+    //animate the ship rotation
+    
+    CABasicAnimation *animation1 = [CABasicAnimation animation];
+    //animation1.keyPath = @"transform";
+    animation1.keyPath = @"transform.rotation";
+    
+    
+    
+    animation1.duration = 2.0;
+    //animation1.toValue = [NSValue valueWithCATransform3D: CATransform3DMakeRotation(M_PI, 0, 0, 1)];
+    
+    // byValue：相对值，toValue：绝对值
+    animation1.byValue = @(M_PI * 2);
+    
+    
+    [shipLayer addAnimation:animation1 forKey:nil];
+    
+    /*
+     
+     使用 transform.rotation 而不是 transform 做动画的好处
+     1，可以不通过关键帧旋转多于 180度的动画，  transform做360度就等于没旋转
+     2，可以设置相对值，而不是绝对值
+     3，不用创建 CATransform3D,而是使用一个简单的数值来指定角度
+     4，不会和 transform.position 或者 transform.scale冲突。
+     
+     
+     另外，动画的路径 CALayer 中并没有一个 transform.rotation 的属性，这是一个虚拟属性。 CALayer.tranform 是一个 CATranfrom3D 是一个结构体，类似的还有 transfrom.position 和 tranform.scale 。当对他们做动画的时候，
+     Core Animation 会通过 CAValueFunction来计算 tranform\position\scale 属性
+     
+     */
+    
+}
+
 - (IBAction)changeColor {
+    
+    
+    
     //create a new random color
     CGFloat red = arc4random() / (CGFloat)INT_MAX;
     CGFloat green = arc4random() / (CGFloat)INT_MAX;
