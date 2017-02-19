@@ -83,6 +83,7 @@
 		AD106D771E55F4580038E3D2 /* XianShiAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD106D751E55F4580038E3D2 /* XianShiAnimationController.m */; };
 		AD106D781E55F4580038E3D2 /* XianShiAnimationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD106D761E55F4580038E3D2 /* XianShiAnimationController.xib */; };
 		AD52C0821E4A0FA9004E8789 /* FiveController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD52C0811E4A0FA9004E8789 /* FiveController.m */; };
+		AD5534B71E591FF100E15585 /* Ship.png in Resources */ = {isa = PBXBuildFile; fileRef = AD5534B61E591FF100E15585 /* Ship.png */; };
 		AD953FE91E556C53002A2475 /* NSDate+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = AD953FE81E556C53002A2475 /* NSDate+Addition.m */; };
 		ADA82A301E4B17AB00E5F585 /* SixController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA82A2F1E4B17AB00E5F585 /* SixController.m */; };
 		ADA82A321E4B184400E5F585 /* SixController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADA82A311E4B184400E5F585 /* SixController.xib */; };
@@ -195,6 +196,7 @@
 		AD106D761E55F4580038E3D2 /* XianShiAnimationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XianShiAnimationController.xib; sourceTree = "<group>"; };
 		AD52C0801E4A0FA9004E8789 /* FiveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiveController.h; sourceTree = "<group>"; };
 		AD52C0811E4A0FA9004E8789 /* FiveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiveController.m; sourceTree = "<group>"; };
+		AD5534B61E591FF100E15585 /* Ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ship.png; sourceTree = "<group>"; };
 		AD953FE71E556C53002A2475 /* NSDate+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Addition.h"; sourceTree = "<group>"; };
 		AD953FE81E556C53002A2475 /* NSDate+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Addition.m"; sourceTree = "<group>"; };
 		ADA82A2E1E4B17AB00E5F585 /* SixController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixController.h; sourceTree = "<group>"; };
@@ -357,6 +359,7 @@
 		ADB524C41E485C710083249D /* CoreAnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				AD5534B61E591FF100E15585 /* Ship.png */,
 				ADE560511E54A12400BBB812 /* VC3 */,
 				ADE560491E548F9800BBB812 /* VC2 */,
 				ADE560481E548F8600BBB812 /* VC1 */,
@@ -573,6 +576,7 @@
 				AD05DC2B1E52037F00B501C2 /* Snowman_00_05.jpg in Resources */,
 				AD05DC0F1E52037F00B501C2 /* Snowman_01_05.jpg in Resources */,
 				AD05DC361E52037F00B501C2 /* Snowman_04_02.jpg in Resources */,
+				AD5534B71E591FF100E15585 /* Ship.png in Resources */,
 				AD05DC041E52037F00B501C2 /* Snowman_00_06.jpg in Resources */,
 				AD05DC441E52037F00B501C2 /* Snowman_09_03.jpg in Resources */,
 				AD05DC2F1E52037F00B501C2 /* Snowman_07_00.jpg in Resources */,
