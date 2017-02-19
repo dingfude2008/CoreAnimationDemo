@@ -77,6 +77,19 @@
      
      */
     
+    /*
+        在动画过程中取消动画
+     
+        Core Animation 不支持修改动画，但是支持在动画途中获取动画，并移除它
+        正常情况下，动画在进行完就自动移除，除非设置了removedOnCompletion = NO
+        当设置removedOnCompletion = NO 后，动画的生命周期会跟随被添加的图层一样
+     
+        添加动画的时候， -addAnimation:forKey:
+        获取动画的时候， -animationForKey:(NSString *)key;
+        删除动画的时候， -removeAnimationForKey:(NSString *)key;
+        删除所有动画，   -removeAllAnimations;
+     
+     */
     
     
 }
