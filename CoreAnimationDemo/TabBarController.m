@@ -25,7 +25,6 @@
     
     self.selectedIndex = self.viewControllers.count - 1;
     
-    
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"选择" style:UIBarButtonItemStylePlain target:self action:@selector(goSelect)];
     
     self.delegate = self;

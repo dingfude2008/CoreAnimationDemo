@@ -86,6 +86,9 @@
 		AD5534B71E591FF100E15585 /* Ship.png in Resources */ = {isa = PBXBuildFile; fileRef = AD5534B61E591FF100E15585 /* Ship.png */; };
 		AD5534BB1E59290E00E15585 /* AnimationGroupController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5534B91E59290E00E15585 /* AnimationGroupController.m */; };
 		AD5534BC1E59290E00E15585 /* AnimationGroupController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD5534BA1E59290E00E15585 /* AnimationGroupController.xib */; };
+		AD5534C11E59E7AC00E15585 /* CAMediaTimingController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5534BF1E59E7AC00E15585 /* CAMediaTimingController.m */; };
+		AD5534C21E59E7AC00E15585 /* CAMediaTimingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD5534C01E59E7AC00E15585 /* CAMediaTimingController.xib */; };
+		AD5534C41E59EC0500E15585 /* door.png in Resources */ = {isa = PBXBuildFile; fileRef = AD5534C31E59EC0500E15585 /* door.png */; };
 		AD953FE91E556C53002A2475 /* NSDate+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = AD953FE81E556C53002A2475 /* NSDate+Addition.m */; };
 		ADA82A301E4B17AB00E5F585 /* SixController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA82A2F1E4B17AB00E5F585 /* SixController.m */; };
 		ADA82A321E4B184400E5F585 /* SixController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADA82A311E4B184400E5F585 /* SixController.xib */; };
@@ -202,6 +205,10 @@
 		AD5534B81E59290E00E15585 /* AnimationGroupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationGroupController.h; sourceTree = "<group>"; };
 		AD5534B91E59290E00E15585 /* AnimationGroupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationGroupController.m; sourceTree = "<group>"; };
 		AD5534BA1E59290E00E15585 /* AnimationGroupController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimationGroupController.xib; sourceTree = "<group>"; };
+		AD5534BE1E59E7AC00E15585 /* CAMediaTimingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMediaTimingController.h; sourceTree = "<group>"; };
+		AD5534BF1E59E7AC00E15585 /* CAMediaTimingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAMediaTimingController.m; sourceTree = "<group>"; };
+		AD5534C01E59E7AC00E15585 /* CAMediaTimingController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAMediaTimingController.xib; sourceTree = "<group>"; };
+		AD5534C31E59EC0500E15585 /* door.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = door.png; sourceTree = "<group>"; };
 		AD953FE71E556C53002A2475 /* NSDate+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Addition.h"; sourceTree = "<group>"; };
 		AD953FE81E556C53002A2475 /* NSDate+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Addition.m"; sourceTree = "<group>"; };
 		ADA82A2E1E4B17AB00E5F585 /* SixController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixController.h; sourceTree = "<group>"; };
@@ -344,6 +351,17 @@
 			name = Image;
 			sourceTree = "<group>";
 		};
+		AD5534BD1E59E6C700E15585 /* VC4 */ = {
+			isa = PBXGroup;
+			children = (
+				AD5534C31E59EC0500E15585 /* door.png */,
+				AD5534BE1E59E7AC00E15585 /* CAMediaTimingController.h */,
+				AD5534BF1E59E7AC00E15585 /* CAMediaTimingController.m */,
+				AD5534C01E59E7AC00E15585 /* CAMediaTimingController.xib */,
+			);
+			name = VC4;
+			sourceTree = "<group>";
+		};
 		ADB524B91E485C710083249D = {
 			isa = PBXGroup;
 			children = (
@@ -364,6 +382,7 @@
 		ADB524C41E485C710083249D /* CoreAnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				AD5534BD1E59E6C700E15585 /* VC4 */,
 				AD5534B61E591FF100E15585 /* Ship.png */,
 				ADE560511E54A12400BBB812 /* VC3 */,
 				ADE560491E548F9800BBB812 /* VC2 */,
@@ -561,6 +580,7 @@
 				AD05DC451E52037F00B501C2 /* Snowman_05_05.jpg in Resources */,
 				AD05DC0B1E52037F00B501C2 /* Snowman_06_06.jpg in Resources */,
 				AD05DC211E52037F00B501C2 /* Snowman_09_00.jpg in Resources */,
+				AD5534C21E59E7AC00E15585 /* CAMediaTimingController.xib in Resources */,
 				AD05DC431E52037F00B501C2 /* Snowman_02_04.jpg in Resources */,
 				AD05DC1D1E52037F00B501C2 /* Snowman_07_02.jpg in Resources */,
 				AD05DC1C1E52037F00B501C2 /* Snowman_04_00.jpg in Resources */,
@@ -607,6 +627,7 @@
 				AD05DC241E52037F00B501C2 /* Snowman_02_03.jpg in Resources */,
 				AD05DC031E52037F00B501C2 /* Snowman_00_00.jpg in Resources */,
 				AD05DC201E52037F00B501C2 /* Snowman_07_06.jpg in Resources */,
+				AD5534C41E59EC0500E15585 /* door.png in Resources */,
 				AD05DC2E1E52037F00B501C2 /* Snowman_06_04.jpg in Resources */,
 				AD05DC3E1E52037F00B501C2 /* Snowman_02_01.jpg in Resources */,
 				AD05DC101E52037F00B501C2 /* Snowman_07_01.jpg in Resources */,
@@ -642,6 +663,7 @@
 				AD52C0821E4A0FA9004E8789 /* FiveController.m in Sources */,
 				ADEEC3BE1E53418D00570B66 /* NineController.m in Sources */,
 				AD106D6D1E55E4F20038E3D2 /* PresentationModelController.m in Sources */,
+				AD5534C11E59E7AC00E15585 /* CAMediaTimingController.m in Sources */,
 				ADAA76D91E4C616D00A9BF6A /* SevenController.m in Sources */,
 				AD106D771E55F4580038E3D2 /* XianShiAnimationController.m in Sources */,
 				ADB524E51E48B6B30083249D /* SecondController.m in Sources */,

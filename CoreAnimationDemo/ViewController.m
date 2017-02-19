@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "CAMediaTimingController.h"
 
-@interface ViewController ()<CALayerDelegate>
+@interface ViewController ()<CALayerDelegate, UIActionSheetDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *test1View;
 
@@ -178,9 +179,36 @@
     CGContextStrokeEllipseInRect(ctx, layer.bounds);
 }
 
+- (IBAction)buttonClick:(id)sender {
+    
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Go" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"1",@"2",@"3",@"4", nil];
+    [actionSheet showInView:self.view];
+    
+}
 
-
-
+#pragma mark UIActionSheetDelegate
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
+    UIViewController *vc;
+    switch (buttonIndex + 1) {
+        case 1:
+            vc = [[CAMediaTimingController alloc] init];
+            break;
+        case 2:
+            
+            break;
+        case 3:
+            
+            break;
+        case 4:
+            
+            break;
+            
+        default:
+            break;
+    }
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
