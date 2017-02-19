@@ -11,8 +11,9 @@
 #import "CALayerAnimationController.h"
 #import "PresentationModelController.h"
 #import "XianShiAnimationController.h"
+#import "AnimationGroupController.h"
 
-@interface TabBarController ()<UIActionSheetDelegate>
+@interface TabBarController ()<UIActionSheetDelegate, UITabBarControllerDelegate>
 
 @end
 
@@ -25,7 +26,9 @@
     self.selectedIndex = self.viewControllers.count - 1;
     
     
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"选择" style:UIBarButtonItemStylePlain target:self action:@selector(goSelect)];;
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"选择" style:UIBarButtonItemStylePlain target:self action:@selector(goSelect)];
+    
+    self.delegate = self;
     
 }
 
@@ -54,6 +57,7 @@
             
             break;
         case 4:
+            vc = [[AnimationGroupController alloc] init];
             
             break;
         case 5:
@@ -80,6 +84,20 @@
     
 }
 
+
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController{
+    //
+    CATransition *transition = [CATransition animation];
+    transition.type = kCATransitionReveal;
+    transition.duration = 1.0;
+    
+//    [self.tabBarController.view.layer addAnimation:transition forKey:nil];
+    
+    [viewController.view.layer addAnimation:transition forKey:nil];
+    
+    
+    
+}
 
 
 - (void)didReceiveMemoryWarning {
