@@ -7,6 +7,7 @@
 //
 
 #import "CAMediaTimingController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface CAMediaTimingController ()
 @property (weak, nonatomic) IBOutlet UIView *containerView;
@@ -23,6 +24,52 @@
     self.edgesForExtendedLayout = UIRectEdgeNone;
     
     [self viewSet];
+}
+
+- (void)viewSet2{
+    /*
+        相对时间
+     
+        beginTime：开始时间，相对于添加到图层的那个时间
+        
+        speed:相对于总时间，如果是2.0的速度， 一个 duration = 1 的动画 0.5就完成了
+     
+        timeOffest: 0-1.0 之间，动画开始的时间，0.5就意味着动画从一半的时候开始
+     
+     
+     */
+    
+    
+    
+    /*
+        fillMode
+     
+        对于一个 beginTime != 0 , 和被设置 removeOnCompletion = NO 的动画，在动画开始之前，和动画结束之后
+     
+        fillMode 设置动画不再播放的时候，定格在什么状态
+     
+        这用来避免动画在结束的时候急速返回。
+     
+        但是需要设置 removeOnCompletion = NO
+     
+     
+     
+     */
+    
+    CABasicAnimation *animation = [CABasicAnimation animation];
+    
+    
+    
+    animation.fillMode = kCAFillModeRemoved;        // 默认移除
+    
+    animation.fillMode = kCAFillModeForwards;
+    
+    animation.fillMode = kCAFillModeBackwards;
+    
+    animation.fillMode = kCAFillModeBoth;
+    
+    
+    
 }
 
 - (void)viewSet{
