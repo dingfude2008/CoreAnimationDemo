@@ -10,6 +10,9 @@
 #import <QuartzCore/QuartzCore.h>
 
 @interface CAMediaTimingController ()
+{
+    CALayer *doorLayer;
+}
 @property (weak, nonatomic) IBOutlet UIView *containerView;
 
 @end
@@ -28,7 +31,7 @@
 
 - (void)viewSet2{
     /*
-        相对时间
+        图层的属性： 相对时间
      
         beginTime：开始时间，相对于添加到图层的那个时间
         
@@ -42,6 +45,8 @@
     
     
     /*
+        动画的属性：
+     
         fillMode
      
         对于一个 beginTime != 0 , 和被设置 removeOnCompletion = NO 的动画，在动画开始之前，和动画结束之后
@@ -111,7 +116,7 @@
      
      */
     
-    CALayer *doorLayer = [CALayer layer];
+    doorLayer = [CALayer layer];
     doorLayer.frame = CGRectMake(0, 0, 128, 256);
     doorLayer.position = CGPointMake(150 - 64, 150);
     doorLayer.anchorPoint = CGPointMake(0, 0.5);
@@ -124,15 +129,48 @@
     perspective.m34 = -1 / 500;
     self.containerView.layer.sublayerTransform = perspective;
     
+    // 设置图层的 speed   这个是设置时间的速度
+    doorLayer.speed = 0;
+    
+    
     
     CABasicAnimation *animation = [CABasicAnimation animation];
     animation.keyPath = @"transform.rotation.y";
+    
+    
+    //animation.speed = 0;
     animation.toValue = @(-M_PI_2);
-    animation.duration = 2.0;
-    animation.repeatCount = INFINITY;
-    animation.autoreverses = YES;
+    
+    animation.duration = 1.0;
+//    animation.repeatCount = INFINITY;
+//    animation.autoreverses = YES;
+    
+    // 设置手拉门的动画
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] init];
+    [pan addTarget:self action:@selector(pan:)];
+    [self.view addGestureRecognizer:pan];
+    
     [doorLayer addAnimation:animation forKey:nil];
     
+}
+
+- (void)pan:(UIPanGestureRecognizer *)pan{
+    
+    CGFloat x = [pan translationInView:self.view].x;
+    
+    x /= 200.0f;
+    
+    CFTimeInterval timeOffest = doorLayer.timeOffset;
+    
+    timeOffest = MIN(0.999, MAX(0.0, timeOffest - x));
+    
+    NSLog(@"%@", @(timeOffest));
+    
+    
+    // 设置图层的 timeOffest
+    doorLayer.timeOffset = timeOffest;
+    
+    [pan setTranslation:CGPointZero inView:self.view];
     
     
 }
