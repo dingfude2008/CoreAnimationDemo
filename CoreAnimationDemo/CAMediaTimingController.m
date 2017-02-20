@@ -74,7 +74,35 @@
     animation.fillMode = kCAFillModeBoth;
     
     
-    
+    /*
+        层级关系时间
+     
+        对于 CALayer 或者 CAGroupAnimation 调整 duration 和 repeatCount/repeateDuration属性不会影响到子动画，但是 begenTime timeOffest speed 会影响到子动画。
+     
+     
+        Core Animation 提供一个 全局时间 的概念。‘马赫时间’ 指的是设备开启的时间。注意：设备休眠的时候会暂停
+     
+        CFTimeInterval time = CACurrentMediaTime()
+     
+     
+     
+        CALayer 的这两个方法可以转换不同图层之间的 ‘本地时间’
+     
+     - (CFTimeInterval)convertTime:(CFTimeInterval)t fromLayer:(nullable CALayer *)l;
+     - (CFTimeInterval)convertTime:(CFTimeInterval)t toLayer:(nullable CALayer *)l;
+     
+        对一个图层添加动画，实际上是给动画对象做了一次不可改变的拷贝，对原始动画的改变不会影响到真实动画。 
+        如果使用 -animationForKey: 获取正在执行的动画来改变它的属性的时候会报错
+     
+        如果移除正在执行的动画，会导致图层急速返回动画之前的状态。但是如果动画在移除之前拷贝呈现图层到模型图层，动画将看起来像是停在了那里，但是不好的地方是之后就不能再动画了
+     
+        一个简单的方式是利用 CATMediaTiming协议，设置图层的 speed = 0 就会暂停动画，设置 > 1.0 就会快进， 设置为负数就会
+            倒回动画
+     
+        加快自动化测试的是利用 AppDelegate 中设置 self.window.layer.speed = 100 来加速的。
+     
+     
+     */
 }
 
 - (void)viewSet{

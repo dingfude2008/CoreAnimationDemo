@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "CAMediaTimingController.h"
+#import "CAAnimationVelocityController.h"
 
 @interface ViewController ()<CALayerDelegate, UIActionSheetDelegate>
 
@@ -194,6 +195,7 @@
             vc = [[CAMediaTimingController alloc] init];
             break;
         case 2:
+            vc = [[CAAnimationVelocityController alloc] init];
             
             break;
         case 3:

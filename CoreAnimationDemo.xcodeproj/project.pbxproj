@@ -78,6 +78,8 @@
 		AD05DC471E52037F00B501C2 /* Snowman_09_05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DC011E52037F00B501C2 /* Snowman_09_05.jpg */; };
 		AD05DC481E52037F00B501C2 /* Snowman_09_06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD05DC021E52037F00B501C2 /* Snowman_09_06.jpg */; };
 		AD05DC4B1E52081B00B501C2 /* FastCATiledLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = AD05DC4A1E52081B00B501C2 /* FastCATiledLayer.m */; };
+		AD0FC1321E5B3FAF001E9315 /* CAAnimationVelocityController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0FC1301E5B3FAF001E9315 /* CAAnimationVelocityController.m */; };
+		AD0FC1331E5B3FAF001E9315 /* CAAnimationVelocityController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD0FC1311E5B3FAF001E9315 /* CAAnimationVelocityController.xib */; };
 		AD106D6D1E55E4F20038E3D2 /* PresentationModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD106D6B1E55E4F20038E3D2 /* PresentationModelController.m */; };
 		AD106D6E1E55E4F20038E3D2 /* PresentationModelController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD106D6C1E55E4F20038E3D2 /* PresentationModelController.xib */; };
 		AD106D771E55F4580038E3D2 /* XianShiAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD106D751E55F4580038E3D2 /* XianShiAnimationController.m */; };
@@ -193,6 +195,9 @@
 		AD05DC021E52037F00B501C2 /* Snowman_09_06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowman_09_06.jpg; sourceTree = "<group>"; };
 		AD05DC491E52081B00B501C2 /* FastCATiledLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastCATiledLayer.h; sourceTree = "<group>"; };
 		AD05DC4A1E52081B00B501C2 /* FastCATiledLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastCATiledLayer.m; sourceTree = "<group>"; };
+		AD0FC12F1E5B3FAF001E9315 /* CAAnimationVelocityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAAnimationVelocityController.h; sourceTree = "<group>"; };
+		AD0FC1301E5B3FAF001E9315 /* CAAnimationVelocityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAAnimationVelocityController.m; sourceTree = "<group>"; };
+		AD0FC1311E5B3FAF001E9315 /* CAAnimationVelocityController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAAnimationVelocityController.xib; sourceTree = "<group>"; };
 		AD106D6A1E55E4F20038E3D2 /* PresentationModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentationModelController.h; sourceTree = "<group>"; };
 		AD106D6B1E55E4F20038E3D2 /* PresentationModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentationModelController.m; sourceTree = "<group>"; };
 		AD106D6C1E55E4F20038E3D2 /* PresentationModelController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PresentationModelController.xib; sourceTree = "<group>"; };
@@ -358,6 +363,9 @@
 				AD5534BE1E59E7AC00E15585 /* CAMediaTimingController.h */,
 				AD5534BF1E59E7AC00E15585 /* CAMediaTimingController.m */,
 				AD5534C01E59E7AC00E15585 /* CAMediaTimingController.xib */,
+				AD0FC12F1E5B3FAF001E9315 /* CAAnimationVelocityController.h */,
+				AD0FC1301E5B3FAF001E9315 /* CAAnimationVelocityController.m */,
+				AD0FC1311E5B3FAF001E9315 /* CAAnimationVelocityController.xib */,
 			);
 			name = VC4;
 			sourceTree = "<group>";
@@ -615,6 +623,7 @@
 				AD05DC3F1E52037F00B501C2 /* Snowman_03_02.jpg in Resources */,
 				AD05DC3D1E52037F00B501C2 /* Snowman_08_03.jpg in Resources */,
 				AD05DC061E52037F00B501C2 /* Snowman_01_06.jpg in Resources */,
+				AD0FC1331E5B3FAF001E9315 /* CAAnimationVelocityController.xib in Resources */,
 				AD05DC351E52037F00B501C2 /* Snowman_08_00.jpg in Resources */,
 				ADB524D01E485C710083249D /* Main.storyboard in Resources */,
 				AD05DC0E1E52037F00B501C2 /* Snowman_01_03.jpg in Resources */,
@@ -665,6 +674,7 @@
 				AD106D6D1E55E4F20038E3D2 /* PresentationModelController.m in Sources */,
 				AD5534C11E59E7AC00E15585 /* CAMediaTimingController.m in Sources */,
 				ADAA76D91E4C616D00A9BF6A /* SevenController.m in Sources */,
+				AD0FC1321E5B3FAF001E9315 /* CAAnimationVelocityController.m in Sources */,
 				AD106D771E55F4580038E3D2 /* XianShiAnimationController.m in Sources */,
 				ADB524E51E48B6B30083249D /* SecondController.m in Sources */,
 				ADA9F28C1E4ECFEC00885AA5 /* ReflectionView.m in Sources */,
