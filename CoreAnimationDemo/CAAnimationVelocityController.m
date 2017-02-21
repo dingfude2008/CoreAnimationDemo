@@ -13,17 +13,35 @@
 
 @property (nonatomic, strong) CALayer *colorLayer;
 
+@property (nonatomic, strong) UIView *layerView;
+
 @end
 
 @implementation CAAnimationVelocityController
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     
-    self.edgesForExtendedLayout = UIRectEdgeNone;
+//    0 0; 320 568
+//         375 667
+//    
     
-    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.layerView = [[UIView alloc] initWithFrame:CGRectMake(0, 64, 300, 300)];
+    [self.view addSubview:self.layerView];
+    self.layerView.backgroundColor = [UIColor yellowColor];
+    
+    
+    NSLog(@"%@ %@", @([UIScreen mainScreen].bounds.size.width), @([UIScreen mainScreen].bounds.size.height));
+    
+//    
+//    self.edgesForExtendedLayout = UIRectEdgeNone;
+//    
+//    self.automaticallyAdjustsScrollViewInsets = NO;
+//    
+//    [self.view layoutIfNeeded];
     
     [self viewSet1];
 }
@@ -55,10 +73,12 @@
     
     self.colorLayer = [CALayer layer];
     self.colorLayer.frame = CGRectMake(0, 0, 100, 100);
-    self.colorLayer.position = CGPointMake(self.view.bounds.size.width/2.0, self.view.bounds.size.height/2.0);
-    self.colorLayer.backgroundColor = [UIColor redColor].CGColor;
+    self.colorLayer.position = CGPointMake([UIScreen mainScreen].bounds.size.width/2.0, [UIScreen mainScreen].bounds.size.height/2.0);
     [self.view.layer addSublayer:self.colorLayer];
     
+    
+    
+    [self changeColor2];
     
 }
 
@@ -80,16 +100,23 @@
     */
     
     /*
-        使用 UIView
+        使用 UIView 的动画缓冲
      
     [UIView animateWithDuration:1.0 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         self.colorLayer.position =  [[touches anyObject] locationInView:self.view];
         
     } completion:NULL];
+     
+     
+     
+     
+     
      */
     
     
-    [self changeColor];
+
+    
+    
 }
 
 - (void)changeColor{
@@ -102,12 +129,97 @@
                                                                                  (__bridge id)[UIColor redColor].CGColor,
                                                                                  (__bridge id)[UIColor greenColor].CGColor,
                                                                                  (__bridge id)[UIColor blueColor].CGColor ];
-    //add timing function
+    //add timing functions
     CAMediaTimingFunction *fn = [CAMediaTimingFunction functionWithName: kCAMediaTimingFunctionEaseIn];
+    
+    
+    /*
+     
+     
+     缓冲和关键帧动画
+     
+     */
     
     // 设置 每个点之间的变化模式，是 vlues个数 -1
     animation.timingFunctions = @[fn, fn, fn];
     [self.colorLayer addAnimation:animation forKey:nil];
+    
+}
+
+- (void)changeColor1{
+    /*
+        自定义缓冲函数
+     
+     */
+    
+    
+    CAMediaTimingFunction *fn = [CAMediaTimingFunction functionWithControlPoints:0.1 :0.2 :0.4 :0.9];
+    
+}
+
+- (void)changeColor2{
+    /*
+        三次贝塞尔曲线
+     
+        CAMediaTimingFunction 函数的主要原则在于它把输入的时间转换成起点和终点的比例的改变。我们可以用一个简单的图标
+     
+     
+     |             /
+     |            /
+     |           /
+     |          /
+     |         /
+     |        /
+     |       /
+     |      /
+     |     /
+     |    /
+     |   /
+     |  /
+     |______________
+     
+     横轴代表时间，纵轴代表该表的量，于是线性的缓冲就是一条从起点开的的简单的斜线
+     
+     这条斜线的斜率代表着速度，斜率的改变代表了加速度，原则上说，任何加速的斜线都可以用这种图像来表示。但是 CAMediaTimingFunction 使用了一个叫做 三次贝塞尔曲线的函数，它可以产出指定缓冲函数的子集。 一个三次贝塞尔曲线通过4个点来定义，第一个和最后一个代表了曲线的起点和终点。剩下的两个点叫做控制点，因为它控制了曲线的形状。贝塞尔曲线的控制点其实位于曲线之外的点，也就是说曲线不一定穿过他们，像吸引曲线经过的磁铁。
+     
+     
+     
+     
+     
+     */
+    
+    CAMediaTimingFunction *function = [CAMediaTimingFunction functionWithName: kCAMediaTimingFunctionLinear];
+    //get control points
+    CGPoint controlPoint1, controlPoint2;
+    
+    
+    float first[2] = { 0.0, 0.0 };
+    float second[2] = { 0.0, 0.0 };
+    
+    
+//    float abc[2] = [0.0, 0.0];
+    [function getControlPointAtIndex:1 values:(float *)&first];
+    [function getControlPointAtIndex:2 values:(float *)&second];
+    
+    NSLog(@"(%@,%@) (%@,%@)", @(first[0]),@(first[1]),@(second[0]),@(second[1]));
+    
+    //create curve
+    UIBezierPath *path = [[UIBezierPath alloc] init];
+    [path moveToPoint:CGPointZero];
+    [path addCurveToPoint:CGPointMake(1, 1)
+                    controlPoint1:controlPoint1 controlPoint2:controlPoint2];
+    //scale the path up to a reasonable size for display
+    [path applyTransform:CGAffineTransformMakeScale(200, 200)];
+    //create shape layer
+    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+    shapeLayer.strokeColor = [UIColor redColor].CGColor;
+    shapeLayer.fillColor = [UIColor clearColor].CGColor;
+    shapeLayer.lineWidth = 4.0f;
+    shapeLayer.path = path.CGPath;
+    [self.layerView.layer addSublayer:shapeLayer];
+    //flip geometry so that 0,0 is in the bottom-left
+    self.layerView.layer.geometryFlipped = YES;
+    
     
 }
 
